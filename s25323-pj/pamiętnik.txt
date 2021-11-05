@@ -2,3 +2,9 @@
 Drogi pamiętniki na ostatnich zajęciach nauczyłem się:
 1.Podstawowej obsługi gita i githuba
 2.Instalacji linuxa na wirtualnej maszynie
+
+
+2021.10.23
+Na drugich zajęciach nauczyłem się:
+1.Jak włączać udostępnianie plików w swoim katalogu
+2.Kiedy i dlaczego możliwa jest edycja i usuwanie plików 
