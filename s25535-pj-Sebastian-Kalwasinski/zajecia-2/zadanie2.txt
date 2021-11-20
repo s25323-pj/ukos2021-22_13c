@@ -1,115 +1,118 @@
-Wykonanie zadania nr.2
+====================
+Wykonanie zadań nr.2
+====================
 
-umask - ustawia maskę tworzenia pliku wykorzystywana
-do nadawania nowoutworzonym plikom początkowych praw dostępu.
-Czyli po polsku określa jakie prawa dostępu ma przydzielać
-gdy tworzę nowy plik.
+================================================================================
+1.umask - ustawia maskę tworzenia pliku wykorzystywana
+  do nadawania nowoutworzonym plikom początkowych praw dostępu.
+  Czyli po polsku określa jakie uprawnienia ma przydzielać
+  gdy tworzę nowy plik.
 
-Samo polecenie umask pokazuje bierzące ustawienie w moim przypadku 002
+  Samo polecenie umask pokazuje bierzące ustawienie w moim przypadku 002
+ 
+  Tabelka z neta dla ułatwienia:
 
-Tabelka z neta dla ułatwienia:
-
-Wartości się dodają i tworzą jedną liczbę
-Number	Permission
-4	read
-2	write
-1	execute
-
-
-0 --- no permission
-1 --x execute
-2 -w- write
-3 -wx write and execute
-4 r-- read
-5 r-x read and execute
-6 rw- read and write
-7 rwx read, write and execute
-
-Moja wartość umask obecnie wynosi 002
-Nowo utworzony plik otrzymuje prawa dostępu rw-rw-r--
-
-Zmieniam maskę na 022
-Nowo utworzony plik otrzymuje prawa dostępu rw-r--r--
-
-Zmieniam maskę na 222
-Nowo utworzony plik otrzymuje prawa dostępu r--r--r--
-
-Zmieniam maskę na 000
-Nowo utworzony plik otrzymuje prawa dostępu rw-rw-rw-
-
-Zmieniam maskę na 666
-Nowo utworzony plik otrzymuje prawa dostępu ---------
-
-Zmieniam maskę na 777
-Nowo utworzony plik otrzymuje prawa dostępu ---------
-
-Zmieniam maskę na 555
-Nowo utworzony plik otrzymuje prawa dostępu -w--w--w-
-
-Zmieniam maskę na 444
-Nowo utworzony plik otrzymuje prawa dostępu -w--w--w-
+  Wartości się dodają i tworzą jedną liczbę
+  Number	Permission
+  4           	read
+  2     	write
+  1     	execute
 
 
-Coś się nie zgadza.
-Umask przydziela prawa dostępu inaczej niż bym się tego spodziewał.
+  0 --- no permission
+  1 --x execute
+  2 -w- write
+  3 -wx write and execute
+  4 r-- read
+  5 r-x read and execute
+  6 rw- read and write
+  7 rwx read, write and execute
 
----->>>"Mały research w internecie">>>----
+  Moja wartość umask obecnie wynosi 002
+  Nowo utworzony plik otrzymuje prawa dostępu rw-rw-r--
 
-Znalazłem to:
------------------------------------
-umask 022 => 777 - 022 => chmod 755
-umask 077 => 777 - 077 => chmod 700
-umask 002 => 777 - 002 => chmod 775
-umask 007 => 777 - 007 => chmod 770
-umask 027 => 777 - 027 => chmod 750
-umask 177 => 777 - 177 => chmod 600
-------------------------------------
-Zmieniam maskę na 177
-Nowo utworzony plik otrzymuje prawa dostępu rw-------
-Używam chmod 600 na innym pliku i otrzymuje prawa dostępu rw-------
+  Zmieniam maskę na 022
+  Nowo utworzony plik otrzymuje prawa dostępu rw-r--r--
 
-Zmieniam maskę na 022
-Nowo utworzony plik otrzymuje prawa dostępu rw-r--r--
-Używam chmod 755 na innym pliku i otrzymuje prawa dostępu rwxr-xr-x
+  Zmieniam maskę na 222
+  Nowo utworzony plik otrzymuje prawa dostępu r--r--r--
 
-Zmieniam maskę na 111
-Nowo utworzony plik otrzymuje prawa dostępu rw-rw-rw-
-Używam chmod 666 na innym pliku i otrzymuje prawa dostępu rw-rw-rw-
+  Zmieniam maskę na 000
+  Nowo utworzony plik otrzymuje prawa dostępu rw-rw-rw-
+
+  Zmieniam maskę na 666
+  Nowo utworzony plik otrzymuje prawa dostępu ---------
+
+  Zmieniam maskę na 777
+  Nowo utworzony plik otrzymuje prawa dostępu ---------
+
+  Zmieniam maskę na 555
+  Nowo utworzony plik otrzymuje prawa dostępu -w--w--w-
+
+  Zmieniam maskę na 444
+  Nowo utworzony plik otrzymuje prawa dostępu -w--w--w-
 
 
-Dalej coś nie jest tak jak powinno być.
-Umask w żadnym z przypadków nie przydzielił praw execute.
+  Coś się nie zgadza.
+  Umask przydziela prawa dostępu inaczej niż bym się tego spodziewał.
 
-Hmpf... --->>> Reseatch w internecie>>> ---
+  ---->>>"Mały research w internecie">>>----
 
-"-Is it possible to assign execute permission for a file with the help of umask?"
--"You can't. umask is used to reduce permissions, not to increase them"
--"This is really not a good idea, and it isn't supported"
+  Znalazłem to:
+  ===================================
+  umask 022 => 777 - 022 => chmod 755
+  umask 077 => 777 - 077 => chmod 700
+  umask 002 => 777 - 002 => chmod 775
+  umask 007 => 777 - 007 => chmod 770
+  umask 027 => 777 - 027 => chmod 750
+  umask 177 => 777 - 177 => chmod 600
+  ===================================
+  Zmieniam maskę na 177
+  Nowo utworzony plik otrzymuje prawa dostępu rw-------
+  Używam chmod 600 na innym pliku i otrzymuje prawa dostępu rw-------
 
-To trochę wyjaśnia.
-Podsumowując to zadanie.
+  Zmieniam maskę na 022
+  Nowo utworzony plik otrzymuje prawa dostępu rw-r--r--
+  Używam chmod 755 na innym pliku i otrzymuje prawa dostępu rwxr-xr-x
 
-Umask ma wartości odwrotne do chmod według tabeli powyżej
-z tym że nie jest w stanie nadać praw dostępu execute.
+  Zmieniam maskę na 111
+  Nowo utworzony plik otrzymuje prawa dostępu rw-rw-rw-
+  Używam chmod 666 na innym pliku i otrzymuje prawa dostępu rw-rw-rw-
 
-Aktualizując definicję: umask określa jakie prawa dostępu przyznawać
-nowo-utworzonym plikom z tym że częściej używa się go
-by je odejmować niż przyznawać ich więcej. Takie wygodne narzędzie
-do kontroli kto, gdzie, co, by nie pisać ciągle chomod.
 
-Na końcu jeszcze jest pytanie "jaka operacja logiczna
-na bitach domyślnych praw dostępu oraz maski jest wykonywana."
+  Dalej coś nie jest tak jak powinno być.
+  Umask w żadnym z przypadków nie przydzielił praw execute.
 
-Z definicji podanej w man umask jest to negacja (zaprzeczenie).
-Mamy nadane prawa dostępu 666 (rw-rw-rw-).
-umask neguje je (zaprzecza im) za pomocą 022 (----w--w-).
-Zgodnie z tabelą nowe prawa dostępu to 644, (rw-r--r--).
-czyli prawa domyślne pomniejszone o te z umask.
+  Hmpf... --->>> Reseatch w internecie>>> ---
 
-Mam nadzieję że dobrze tłumaczę. Staram się tłumaczyć na chłopski rozum,
-własnymi słowami bym sam rozumiał co piszę.
-Z radością przyjmę sugestie, konstruktywną krytykę i
-poprawki do tego co udało mi się wykonać w tym zadaniu.
+  "Is it possible to assign execute permission for file with the help of umask?"
+  -"You can't. umask is used to reduce permissions, not to increase them"
+  -"This is really not a good idea, and it isn't supported"
+================================================================================
+
+  To trochę wyjaśnia.
+  Podsumowując to zadanie.
+
+  Umask ma wartości odwrotne do chmod według tabeli powyżej
+  z tym że nie jest w stanie nadać praw dostępu execute.
+
+  Aktualizując definicję: umask określa jakie prawa dostępu przyznawać
+  nowo-utworzonym plikom z tym że częściej używa się go
+  by je odejmować niż przyznawać ich więcej. Takie wygodne narzędzie
+  do kontroli kto, gdzie, co, by nie pisać ciągle chmod.
+
+  Na końcu jeszcze jest pytanie "jaka operacja logiczna
+  na bitach domyślnych praw dostępu oraz maski jest wykonywana."
+
+  Z definicji podanej w man umask jest to negacja (zaprzeczenie).
+  Mamy nadane prawa dostępu 666 (rw-rw-rw-).
+  umask neguje je (zaprzecza im) za pomocą 022 (----w--w-).
+  Zgodnie z tabelą nowe prawa dostępu to 644, (rw-r--r--).
+  czyli prawa domyślne pomniejszone o te z umask.
+
+  Mam nadzieję że dobrze tłumaczę. Staram się tłumaczyć na chłopski rozum,
+  własnymi słowami bym sam rozumiał co piszę.
+  
 
 
 

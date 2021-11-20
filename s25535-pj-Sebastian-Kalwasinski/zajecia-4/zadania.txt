@@ -1,0 +1,155 @@
+====================
+Wykonanie zadań nr1.
+====================
+
+================================================================================
+1.Ścieżka względna zaczyna się od miejsca w którym się znajdujemy i jest
+  od niego zależna. W moim przypadku to będzie tak:
+    
+   cd ../../..
+   cd kot/ma/ale
+
+  Ścieżka bezwzględna zaczyna się od katalogu domowego i nie ma znaczenia gdzie
+  się teraz znajduję. W moim przypadku to będzie polecenie:
+  
+   cd /home/ubuntu/ukos/kot/ma/ale
+
+===============================================================================
+2.Używam ścieżki bezwzględnej w połączeniu z poleceniem mkdir z argumentem -p
+  by tworzyło także katalogi rodzica (parent) jeśli wymagane. Coś takiego:
+
+  mkdir -p /home/ubuntu/ukos/kot/ma/ale/jan/kowalski
+
+  Dzięki wykorzystaniu ścieżki bezwzględnej nie muszę się przejmować gdzie
+  obecnie się znajduję, jedynie tym czy mam przydzielone prawa dostępu 
+  do odpowiedniego katalogu czy nie.
+
+================================================================================
+3.Do wykonania tego zadania używam polecenia mv (move), które służy do 
+  przenoszenia katalogów/plików, lub zmiany ich nazwy.
+  W tym przypadku przenosimy katalog "ala" do katalogu "i" Coś takiego:
+
+  mv /home/ubuntu/ukos/kot/ma/ale /home/ubuntu/ukos/ala/i
+  1= =============2============== ===========3===========
+
+
+  Na pierwszy rzut oka nie widać, ale polecenie zawiera trzy, a nie dwa elementy
+  Pierwszy to samo polecenie "mv", drugi to katalog "ale" wskazany za pomocą
+  ścieżki bezwzględnej, a trzeci to katalog "i" do którego również prowadzi
+  ścieżka bezwzględna.
+
+================================================================================
+4.Czerwonym krzyżykiem w rogu, chyba że ta odpowiedź jest niedozwolona. xD      
+
+  Jeśli terminal działa to mogę użyć poleceń:
+  
+   ps aux | grep "nazwa programu"
+   kill -9 "PID procesu"
+  
+  Jeśli program jest na pierwszym planie w terminalu to wrzucić go do tła (bg)
+  i wtedy próbować to samo.
+
+  To zadanie wykonuję zakładając że tylko program nie reaguje, a terminal
+  działa bez problemów. Drażniło mnie zagadnienie w którym terminal też by
+  nie współpracował. W takim razie metodą prób i błędów wymyśliłem rozwiązanie.
+  Mógłbym przełączyć się na terminal virtualny kombinacją Ctrl+Alt+F1 i dopiero 
+  z tego terminala uśmiercić nieopowiadjący program. Login do tego terminala
+  to "ubuntu" bez hasła. Odgadłem po trzecim razie. Ten terminal działa w
+  zasadzie tak samo jak ten z którego przywykłem korzystać.
+  
+
+================================================================================<---Do omówienia
+5. By to zrobić przekopałem man-a i internet do góry nogami.
+  
+   To są sposoby by znaleźć wszytko co nie jest katalogiem, czyli w zadadzie
+   można przyjąć że jest plikiem.
+ 
+   ls -lap | grep -v /
+  
+  Polecenie ls z argumentami -lap służy do wylistowania wszytkich plików i 
+  katalogów oraz ma dodać slash '/' na końcu jeśli jest to katalog.
+  W połączeniu z poleceniem grep z argumentem '-v', który odwraca jego działanie
+  (grep znajduje wszytko co nie zawiera podanej frazy) otrzymujemy komendę,
+  która wypisuje tylko pliki.
+  Dalej możemy dodać nasępny filtr który znajduje wyrazy które zaczynją się od
+  "al"
+ 
+  grep -E '\bal'
+
+  Będzie to wyglądało tak:
+
+  ls -lap | grep -v | grep -E '\bal'
+
+  '\b' w wyrażeniu regularnym oznacza granicę słowa:
+  
+  '\bCZĘŚĆ_WYRAZU'   jeśli to co szukamy ma być na początku wyrazu.
+  'CZĘŚĆ_WYRAZU\b'   jeśli ma być na końcu wyrazu
+
+  Nie wiem tylko jak dokładnie ma działać argument "-E",
+  szczególnie że całe polecenie dobrze działało bez argumentu "-E",
+  a wyjaśnienie man  wcale nie jest dla mnie jasne.
+  " Rozszerzone wyrażenie regularne."  
+
+
+  Jest jeszcze drugi sposób by znaleźć niekatalogi:
+
+  ls -la | grep '^-'
+
+  W tym przypadku grep wyszukuje "-" na początku lini. W przypadku katalogów
+  w miejscu "-" znajduje się "d" (directory).
+ 
+  Starałem się przy tym zadaniu jak mogłem i próbowałem różych kombinacji,
+  ale czegoś wciąż mi brakuje i nie wiem czy jest to rozwiązanie, które
+  oczekiwał pan zobaczyć.
+  
+  
+================================================================================
+6. Ma to tak wyglądać
+
+  =============
+    rwxr----x
+    111100001
+    -7--4--1-
+  ============= 
+
+  Notacja ósemkowa: chmod 741 ala
+  
+  Notacja symboliczna: "chmod u=rwx ala", "chmod g=r ala", "chmod o=x ala".     <---Do omówienia
+  Nie ma jednego polecenia na zmianę kilku praw dostępu naraz?
+
+================================================================================
+7.Plik z listą PLIKÓW w bieżącym katalogu
+
+  By wyświetlić zawartość katalogu używamy polecenia ls
+  By zapisać wynik działania jakiegoś polecenia w pliku mogę użyć operatora ">"
+
+  By zrobić listę PLIKÓW w pliku w bierzącym katalogu mogę złożyć w całość
+  następujące polecenie
+
+  ls -a | grep '^-' >mój_plik   ,lub
+  ls -ap | grep -v / >mój_plik
+  ==1===  ===2====  3= ===4===
+ 
+  1.Polecennie do wypisania zawartości bieżącego katalogu
+  2.Filtr pozbywający się katalogów, zostawiający pliki
+  3.Operator strumienia "Umieść mi wynik działania polecenia nr2. tutaj"
+  4.Plik do którego zampisane zostaną dane.
+  
+================================================================================
+8.
+  1.Nie mam przydzielonych praw dostępu do katalogu w którym chcę utworzyć plik.<---Do omówienia
+  2.Serwery padły
+
+  Trochę mało tych pomysłów mam.
+================================================================================
+9.TAB-ulator. Oczywiście trzeba podać początek by miał co uzupełniać.
+================================================================================
+10.Najprostszy sposób to mogę go w interfejsie graficznym uruchomić. A tak 
+  jak ma być rozwiązane to zadanie to:
+  
+ 1. Za pomocą polecenia ""nazwa programu" &". np: "gedit &"
+ 2. Za pomocą działań kolejno:
+    polecenie "nazwa programu" ---> kombinacja Ctrl+Z  ---> polecenie "bg"
+
+  
+

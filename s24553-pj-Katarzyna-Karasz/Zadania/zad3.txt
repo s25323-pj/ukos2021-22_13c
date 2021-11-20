@@ -1,0 +1,13 @@
+1. Utowrzyłam w katalogu domowym grupę podkatalogów i plików tekstowych. Przydzieliłam uprawnienia 777 555 540 używając polecenia chmod.
+Próbowałam wejść do innych folderów, nie do wszystkich mogłam wejść i nie wszędzie mogłam edytować pliki.
+
+2. Po usunięciu wszystkich uprawnień do pliku otrzymuje się komunikat Permission Denied.
+
+3. Operator > w echo wydrukuje tekst do pliku, ale zmaże całą jego wcześniejszą zawartość.
+Operator >> w echo dopisze na końcu pliku komunikat.
+
+4. Minimalne uprawnienia których potrzebowałam aby wyświetlić swoją stronę to rwxr-xr-x czyli chmod 755.
+
+5. Od pełnych praw dostępu odejmowana jest maska ustawiona przez umask. Np.: 777 - 022 = 755
+
+

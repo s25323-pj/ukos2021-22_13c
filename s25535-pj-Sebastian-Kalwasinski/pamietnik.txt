@@ -1,33 +1,46 @@
----------------------------------------------------------------------------------------------------------------------------------------------------------
-Pamiętnik jest czytelny na pełnym ekranie. Przynajmniej na moim 2560x1440. W razie problemów mogę poprawić. Tak samo w przypadku baboli ortograficznych. 
----------------------------------------------------------------------------------------------------------------------------------------------------------
-================================================================================================================================================================
+--------------------------------------------------------------------------------
+Pamiętnik s25535, poprawiony
+--------------------------------------------------------------------------------
+================================================================================
 17 Października 2021.
 
 Drogi mój pamiętniczku.
 
- Od ostatnich zajęć minął tydzień. Od tego czasu w miarę możliwości codziennie się czegoś uczyłem cegiełka po cegiełce
-Kto by się jednak spodziewał że największym wyzwaniem będzie nauka na zajęcia UKOS.
-Masa informacji w krótkim czasie przytłacza już nie mówiąc o tym że to nie jest jedyny przedmiot któremu należy poświęcać czas.
+ Od ostatnich zajęć minął tydzień. Od tego czasu w miarę możliwości
+codziennie się czegoś uczyłem cegiełka po cegiełce
+Kto by się jednak spodziewał, największym wyzwaniem jest nauka na zajęcia UKOS.
+Masa informacji w krótkim czasie przytłacza już nie mówiąc o tym że to
+nie jest jedyny przedmiot któremu należy poświęcać czas.
  
- Mimo to dzień za dniem uczyłem się czegoś nowego. Czy to polecenia w terminalu linuxa, nauka Git-branchingu czy obsługi vima.
-Na ten czas narbardziej spodobała mi się komenda " tree ", która wyświetla w sposób graficzny jakie katalogi i pliki posiadam.
-Bardzo przydatna funkcja. Wiem na czym stoję bez większych kombinacji. Klawisz tabulatora też znacznie ułatwia życie.
+ Mimo to dzień za dniem uczyłem się czegoś nowego.
+Czy to polecenia w terminalu linuxa, nauka Git-branchingu czy obsługi vima.
+Na ten czas narbardziej spodobała mi się komenda " tree ",
+ która wyświetla w sposób tekstowo-graficzny jakie katalogi i pliki posiadam.
+Bardzo przydatna funkcja. Wiem na czym stoję bez większych kombinacji.
+Klawisz tabulatora też znacznie ułatwia życie.
 
- Moją największą obawą jest popełnianie błedów, szczególnie jeśli chodzi o odpowiednie wykonywanie zadań i pushowanie gitów w poprawny/wymagany sposób.
-Na szczęście znalazłem na to dość dobre rozwiązanie. Za pomocą VirtualBoxa postawiłem linuxa i każde polecenie, które jest dla mnie nowe mogę do woli testować.
-Nawet jeśli skasuję cały system operacyjny to stanie się to na maszynie witrualnej, a nie tam gdzie bym tego nie chciał. Win-Win Sytuation. 
+ Moją największą obawą jest popełnianie błedów,
+szczególnie jeśli chodzi o odpowiednie wykonywanie zadań i
+pushowanie gitów w poprawny/wymagany sposób.
+Na szczęście znalazłem na to dość dobre rozwiązanie.
+Za pomocą VirtualBoxa postawiłem linuxa i każde polecenie,
+które jest dla mnie nowe mogę do woli testować.
+Nawet jeśli skasuję cały system operacyjny to na maszynie witrualnej,
+a nie tam gdzie bym tego nie chciał. Win-Win Sytuation. 
 
-Podsumowując. Nauka od zera to niełatwe zadanie, jednak staje się bardzo satysfakcjonująca gdy już pojawia się reakcja: "TAK DZIAŁA! NARESZCIE!". 
-Nie mam zamiaru poddawać się bez walki,czego i życzę wsystkim ambitnym studentom.
+Podsumowując. Nauka od zera to niełatwe zadanie,
+jednak staje się bardzo satysfakcjonująca gdy już pojawia się reakcja:
+"TAK DZIAŁA! NARESZCIE!". 
+Nie mam zamiaru poddawać się bez walki,czego i
+życzę wsystkim ambitnym studentom.
 
 Do zobacznia wkrótce, twój student: 25535.
 
 Ps: Numpad na vimie mnie wykończy ;__;
 
-================================================================================================================================================================
+================================================================================
 
-======================================================================
+================================================================================
 29 Października 2021
 
 To znowu ja.
@@ -46,7 +59,7 @@ szczenięcego szczęścia z zaciskiem szczęki dwóch ton.
 potem UKOS, a jak starczy czasu to matemetyka. Narazie jestem na 
 etapie UKOSU o czym świadczy żalenie się pamiętnikowi jakie to 
 życie jest ciężkie i niesprawiedliwe, 'wink wink'.
-Wiedza o prawach dostępu się przyda. Po co ktoś ma mi grzebać tam
+Wiedza o przyznawaniu praw dostępu się przyda. Po co ktoś ma mi grzebać tam
 gdzie nie ma grzebać. Z ciekawości sprawdzałem co inni losowo
 wybrani studenci mają na szuflandi i na jednym jest katalog
 "nagie_chomiki". Szkoda że w vimie nie mogłem ich narysować
@@ -62,10 +75,48 @@ Zawsze twój s25535.
 
 Ps: Dalej numpad na vimie mnie dobija.
  
-======================================================================
+===============================================================================
+13 Listopada 2021
+Drogi mój uwielbiony pamiętniczku.
+
+ Dokładne daty dla ciebie i tak nie mają jakiegoś specjalnego znaczenia, gdyż,
+iż, ponieważ pamiętnik piszę i robię zadania po trochu co kilka dni jak mnie
+wena twórcza najdzie.
+
+ Pan prowadzący UKOS był bardzo miły wskazać mi literówkę w mojej
+stronie internetowej. Naraszcie działa, JeJ! Jestem z siebie taki dumny.
+Z Pana też że ma lepszy wzrok niż ja. Jeszcze się zazdrosny zrobię.
+
+ Nareszcie uporządkowałem zadania aż do następnego zjazdu. Znając życie i tak
+będzie coś do poprawy i wyjaśnienia szczególnie że zadanie nr.5 pozbawiło mnie
+większej części życia niż reszta zadań razem wzięta. Musiałem nauczyć się
+jak za pomocą polecenia ls wyszukiwać niekatalogi. Pewnie są jakieś lepsze 
+metody i polecenia niż nakładanie filrta grep na ls by pozbyć się katalogów
+z listy, ale ważne że działa. Good enough, wystarczy. Programista nie może
+być perfekcjonistą bo zwarjuje próbując sprawić by wszytko odrazu było idealne.
+
+ Dostaliśmy małe "mrug, mrug" jednym okiem od pana prowadzącego by przyglądać
+się zadaniom jakie będą na następnych zajęciach i ewentulanie zgłośić swoje
+wątpliwości do wybranych. Nie spodziewałem się że mnie ambicja poniesie i 
+sam się zabiorę za wszystkie po kolei. Przynajmniej mogę się odrazu zapytać się
+o te które smiały mi się w twarz obserwując jak się męczę.
+"Mrug, mrug" do prowadzącego (zadania do omówienia w poszczególnych plikach).
+Z radością dowiem się jak to miało być, a wszyło jak zawsze.
+
+ Chyba że mnie nagle odpowiedź napadnie jak będę brał prysznic,
+albo pójdę na spacer i będę musiał ją szybko zapisać bo zapomnę. Często tak mam.
+
+s25535 Tutaj był.
+
 
 
  
+
+ 
+
+
+
+
  
   
 

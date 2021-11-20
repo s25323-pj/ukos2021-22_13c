@@ -1,0 +1,9 @@
+1. Utworzyłam katalogi używając komendy 'mkdir'
+2. Używając komendy 'touch' utworzyłam pliki z odpowiednim rozszerzeniem
+3. Używając komend 'mkdir -p' utworzyłam katalog ukos/to/jest/dluga/nazwa
+4. Utworzyłam plik dane.txt za pomocą komendy 'touch'
+5. Po przejsciu w katolog ukos/klamka, używając komendy cd, użyłam komendy 
+'rm -rf ./*.txt', aby usunąc wszystkie pliki .txt
+6. Będąc w katalogu 'ukos/katalog' używając komendy 'rmdir' usunęłam 
+katalog2
+7. Używając komendy 'rm -rf' usunęłam katalog 'klamka'

@@ -1,0 +1,24 @@
+$ ls -a
+ukazalo to wszystkie pliki ukryte i nie ukryte
+$ ls -a | grep D
+ukazalo to wszystkie pliki majace w nazwie literke "D"
+$ ls -a | grep D > ListaPlikowZLitrekaD.txt
+zapisze to wyniki komendy wczesniejszej w podanym pliku txt
+
+zad1?
+znak ? w kolumnie tty oznacza ze dany proces nie jest przypisany do zadnego wirtualnego terminala
+1.
+$ ps -fC bash
+2.
+$ ps -u root
+
+3.
+$ ctrl+c
+jest brutalnym zakonczeniem procesu
+$ ctrl+d
+jest bezpiecznym zakonczeniem procesu, na tyle na ile sie da szybkim. W zaleznosci jakie musi program wykonac procedury aby ukonczyc bezpiecznie swe dzialania
+
+$ ctrl+c
+Nie zmienimy zawartosci pliku, gdyz nie dalismy mu szansy zapisac sie
+$ ctrl+d
+Zmiany zostana zapisane

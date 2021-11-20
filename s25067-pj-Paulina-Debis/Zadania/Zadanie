@@ -1,0 +1,14 @@
+1. Uruchomilam terminal.
+2. Aby wyswietlic zawartosc aktualnego katalogu wpisalam komende ls.
+3. Uzylam komenty pwd /home/ubuntu/Desktop/Zajecia/trzeci-zjazd/s25067-pj-Paulina-Debis/Zadania, zgadza sie z interfejsem graficznym
+4. cd ../../../../
+5. pwd /home/ubuntu/Desktop
+6. ls adding-packages-permanently-info.txt  passwords-info.txt  Zajecia
+7. Otrzymalam to samo.
+8. Komenda ls ../ otrzymałam - Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+9. cd .. a nastepnie cd Pictures
+10. pwd /home/ubuntu/Pictures
+11. wpisanie komendy ././././ nic nie zmienilo
+12. cd /home
+13. Premission denied
+14. Po wciśnięciu klawiszy Ctrl+Alt+F1 otworzyła mi się jakaś chińska wersja terminala.

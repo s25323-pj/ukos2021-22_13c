@@ -1,0 +1,110 @@
+====================
+Wykonanie zadań nr.1
+====================
+
+
+
+================================================================================
+  Wpisuję komendę ls -a w terminalu. Argument -a (all) dołączony do polecenia ls
+  powoduje że dodatkowo wypisuje mi pliki zaczynające się od kropi ( . ). 
+
+  Wpisuję ls -a | grep D. Wylistowało mi w konsoli tylko katalogi/pliki,
+  króre posiadają DUŻĄ literę D w swojej nazwie. Dla pewności sprawdziłem
+  jeszcze z DUŻYM P i małym p. Wielkość litery ma znaczenie.
+  Podając małe p w komedzie ls -a | grep p wylistowało mi wszystkie katalogi
+  i pliki zawierające małą literę p niezależnie od tego czy jest na początku
+  wyrazu czy nie.
+
+
+  Wykonuję komendę ls -a | grep D > List.txt 
+  Polecenie wykonało się tak jak w pierwszym przypadku z tą różnicą że 
+  wyniki mojego wyszukiwania nie zostały podanie bezpośrednio w terminalu,
+  ale przekierowane za pomocą operatora ' > ' do pliku tekstowego Lista.txt
+  Po sprawdzeniu List-y za pomocą polecenia cat faktycznie w moim pliku
+  znajdują się wyniki wyszukiwania.
+
+
+  Operator " | "
+
+  The pipe operator, it passes the output of one command
+  as input to another. 
+
+  Po polsku to oznacza dla mnie tyle że ta pionowa kreska podaje wynik (output)
+  pierwszego polecenia jako dane wejściowe (input) do drugiego.
+  Czyli to takie coś:
+
+  ls -a | grep D
+
+  = ls -a = Wylistuj wszytko
+  =   |   = Uwaga następna komenda!
+            Łapaj wynik poprzedniczki.(Następuje Podanie).
+  = grep D= Znajdź wszytkie pliki/katalogi z DUŻYM D
+            w tym co mi wylistowała ls -a 
+
+
+  Operator " > "
+
+  Taka strzałka która wskazuje gdzie ma się znaleźć wynik wykonanego polecenia.
+
+  ls -a > List.txt
+
+  = ls -a    = Wylistuj wszytko
+  =   >      = Uwaga poprzedia komenda!
+               Tu mnie to tujaj umieszaczaj.(Pokazuje gdzie)
+  = List.txt = Mój plik w którym są umieszczone wyniki pierwszej komendy.
+
+
+
+================================================================================
+1.Wpisuję ps
+
+  Wyświetliło mi migawkę (snapshota) obecnych procesów.
+  Man podpowiada polecenie top.
+
+  Wpisuję top
+
+  Wyświetla mi listę procesów liuxa, która jest na bieżąco aktualizowana.
+  To za dużo dla takiego nowicjusza jak ja. Niech narazie będzie ps.
+
+  Wpisuję po kolei ps -a, ps x, ps axu
+
+  Zgapa z neta:
+
+  ======================================================
+  a = show processes for all users
+  u = display the process's user/owner
+  x = also show processes not attached to a terminal
+  =====================================================
+
+  Wpisując kolejno ps a, ps u, ps x, zauważyłem różnicę.
+  W przypadku argumantu 'u' (user), zostały wyświetlone dodatkowo
+  informacje dotyczące procentowego użycia procesora i pamięci.
+  Dodatkowo:
+
+  VSZ - the Virtual Memory Size. It includes all memory
+        that the process can access, including memory that is swapped out,
+        memory that is allocated, but not used,
+        and memory that is from shared libraries.
+
+  RSS - Resident Set Size and is used to show
+        how much memory is allocated to that process and is in RAM
+
+  Te dwa parametry narazie zostawię w spokoju.
+
+  Co to dla mnie znaczy?
+
+  = ps -a  = wylistuj procesy nikogo?
+  = ps u   = wylistuj procesy właścieciela. Mówi samo za siebie.
+
+  = ps aux = Pytanie do prowadzącego Czy "ps ax" różni się czymś                <--------Do omówienia
+             od "ps aux" pozatym że w przypadku "ps ax"
+             Nie ma paru kolumn  (USER, %CPU, %MEM)?
+
+  A co oznacza znak zapytania "?" w drugiej kolumnie TTY (TeleTYpewriter)
+  Jak dla mnie to że system nie ma pojęcia, jakiej konsoli używa proces
+  albo w ogóle nie używa?
+
+2.By wyświetlić wszytkie procesy bash używam polecenia ps axu | grep bash,
+  podobnie w przypadku roota: ps axu | grep root .
+
+

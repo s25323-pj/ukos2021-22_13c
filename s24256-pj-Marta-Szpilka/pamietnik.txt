@@ -1,0 +1,23 @@
+
+2021.10.21
+
+W dniu 2021.10.09 nauczyłam się:
+- podstaw obsługi git;
+- podstaw obsługi maszyny wirtualnej;
+- kilku poleceń i funkcji używanych w terminalu; 
+
+2021.11.01
+
+W dniu 2021.10.23 nauczyłam się:
+- informacji o prawach do pilków oraz folderów, które mogę przypisać różnym grupom;
+- jak zalogować się do Gita oraz szuflandii bez hasła;
+- jak znaleźć pomoc do poszczególnych poleceń;
+
+2021.11.12
+
+W dniu 2021.11.06 nauczyłam się:
+- o strumieniach wyjscia i wejscia;
+- jak filtrować pliki przez komende grep;
+- komend - ps, bg, fg, jobs;
+- do czego służy znak "&" na końcu wiersza; 
+

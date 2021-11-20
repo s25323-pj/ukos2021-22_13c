@@ -1,4 +1,11 @@
 Zaleznie od tego jaka maske przyjmiemy dla danego folderu, kazdy kolejny nowo powstaly plik
 bedzie posiadal prawa dostepu, jakie narzuca  mu maska folderu. Zasada ta nie dziala dla plikow,
 ktore istnieja juz w folderze. Prawa plikow, ktore istanialy w folderze przed zmiana maski, mozna zmienic
-przy pomocy programu "chmod". 
+przy pomocy programu "chmod".
+
+Dodatkowa odpowiedz na komentarz przy pull request: 
+Dzialanie maski
+Maska tylko przykrywa istniejace prawa katalog, dla nowych plikow.
+Tworzac maske 222, dla folderu 664, kazdy kolejny plik otrzyma prawa 444.Dzieje sie tak, poniewaz prawa i maski sa rozkładane na wartości binarne. Do praw folderu, dodaje się negacje maski przy pomocy bramki logicznej AND. Wynik daje nam nowe prawa dla kolejnych plików. 
+Nakladajac nowa maske, naklada sie ona nadal w odniesieniu do praw folderu czyl
+664. Nie ma mozliwosci nalozenia maski na maske.

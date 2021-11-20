@@ -1,0 +1,10 @@
+Zadanie 1
+*Po wpisaniu komendy ls -a w katalogu domowym wypisało mi wszystkie foldery oraz pliki ukryte(około 30)
+*Po wpisaniu komendy ls |grep D wypisało mi tylko foldery zaczynające się na litere "D"(tym razem tylko 3)
+*Po wpisaniu komendy ls |grep D > ListaplikówzliterąD.txt utwrzył się folder pod nazwą ListaplikówzliterąD.txt w którym znajdują się tylko te 3 foldery zaczynajace się z literą D
+*Po wpisaniu komendy ps wyświetliła mi się lista procesów
+*Po wpisaniu komendy ps aux wyświetliła mi się dlugo lista aktualnie działających procesów ale także usera jak długo działa proces ile zajmuję %cpu (taki menedzer zadań windowsowy)
+*Połączenie ctr+c wstrzymuje program i przenosi go na bok (program nadal działa ale jest wstrzymany)
+*Połączenie ctr+z wstrzymuje program i przenosi go na bok (program został zatrzymany i przestaje odpowiadać)
+
+

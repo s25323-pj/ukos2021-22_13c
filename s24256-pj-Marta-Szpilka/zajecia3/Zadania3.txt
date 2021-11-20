@@ -1,0 +1,38 @@
+1. 
+ps = wyświetla podstawowe informacje o powłokach procesów;
+ps -a = wyświetla informacje również o procesach innych użytkowników;
+ps x = wyświetla również procesy niepodłączone do terminala;
+ps aux = wyświetla powyższe procesy oraz nazwe użytkownika;
+
+1.1 Użyłam 
+ps aux | grep bash 
+1.2 Użyłam 
+ps aux | grep root
+
+2. 
+1.Uruchomiłam edytor tekstowy;
+2.wpisałam ps aux;
+3.wpisałam kill numer PID;
+-na początku w terminalu nie było widać różnicy, program zakończył się po wpisaniu fg %numer (który otrzymujemy po wpisaniu jobs);
+4. po wpisaniu killall shell 
+- w szuflandii nic się nie stało;
+- w maszynie wirtualnej wyświetlił się komunikat "no process found"
+5. Komenda kill nie jest dozwolona do użycia na procesach innych użytkowników;
+
+3. 
+1. Wpisałam cat
+2. Po wybraniu "ctrl + C", cat zostało zamknięte bez zapisania
+
+1. Wpisanie cat > wynik1.txt, po wpisaniu "witaj" i wciśnięciu "ctrl + C", cat zostało zamknięte bez zapisania - plik wynik1.txt został pusty
+2. Wpisanie cat > wynik2.txt, po wpisaniu "witaj" i po wybraniu "ctrl + D" (dwa razy), po wpisaniu cat witaj2.txt - "witaj" pokazuje się przed moją nazwą na szuflandii;
+
+4. 
+1. Wpisałam vim, ponieważ na szuflandii nie ma gimp'a
+2. Po wybraniu "Ctrl + Z" program przeniósł się do tła
+3. Wpisałam bg, pokazał mi się komunikat, że vim działa w tle i jest zatrzymany
+4. Po wpisaniu fg - vim otworzył się znów
+
+1. Po wpisaniu nano & - program od razu przeniósł się do tła
+2. Aby przywrócić program na pierwszy plan należy wpisać fg %numer (z jobs)
+
+

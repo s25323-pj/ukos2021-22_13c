@@ -1,0 +1,63 @@
+====================
+Wykonanie zadań nr.1
+====================
+
+================================================================================
+1.Uruchomiłem terminal w maszynie wirtualniej. Jest katalogu z narzędziami 
+  systemowymi "LXTerminal"
+
+2.By przejżeć zawartość aktualnego katalogu używamy samego polecenia ls , lub
+  ls z dodatkiem dodatkowych argumentów. np. ls -l, które pokaże nam nie tylko
+  samą zawartość katalogu, ale i szczegóły jego zawartości: Prawa dostępu dla
+  poszczególnych osób, rozmiar w bitach, datę utworzenia/edycji itd.
+
+3.By określić moją pozycję w terminalu używam polecenia pwd, które wyświetla
+  w jakim katalogu się znajduję za pomocą ścieżki bezwzględnej.
+  Zaczyna od katalogu domowego użytkownia. To jest:
+  /home/ubuntu/Desktop <---Katalog gdzie się znajduję.
+ 
+4.Przejście do konkretnego miejsca za pomocą scieżki względniej jak sama
+  nazwa wskazuje zależy od miejsca w którym się aktualnie znajduję.
+  za pomocą polecenia cd .. , przechodzę do nadkatalogu,  natomiast
+  za pomocą polecenia cd /"Nazwa następnego katalogu"
+  przechodzę do podkatalogu.
+  Nadkatalog to ten większy który jest wcześniej i zawiera ten obecny.
+  Podkatalog to ten mniejszy który najuduje się w miejscu gdzie
+  aktualnie jestem.
+
+5.Polecenie wyświetli /"katalog domowy użytkownika"/"jakieś tam katalogi
+  po drodze jak są"/Desktop.
+
+6.Polecenie ls -l , ewnetualnie ls -la. Samo ls trochę łyse jest.
+
+7.Tak, ale i też nie. Wpisując ls -a Wyświetli mi też zawartość zaczynającą
+  się od kropki której nie ma w interfejsie graficznym.
+
+8.By wświetlić zawartość innego katalogu niż bieżący używam polecenia ls
+  z dodatkiem ścieżki bezwzględniej. Tj:
+  ls /home/"jakiś katalog"/"coś tam jeszcze"/"Katalog który sprawdzam"
+
+9.Stosuję komendy cd ..  ,lub cd "nazwa podkatalogu" Tabulator pomaga.
+
+10.Znowu pwd
+
+11.Niby się nic nie stało. Kropka w poleceniach oznacza katalog bierzący.
+   Wykonując polecenie cd ././././././ szesć razy przechodzę
+   do katalogu bierzącego. Niby nic, ale komputer wykonał polecenie poprawnie.
+
+12.By przejść do katalogu domowego za pomocą ścieżki bezwzględniej muszę podać
+   całą drogę do katalogu do którego chcę się dostać. W przypadku katalogu
+   domogego jest to cd /home/"katalog domowy użytkownika"
+
+13.Polecenie cd /root wywala mi błąd Permission denied. Oznacza to że nie 
+   nie mam przydzielonych praw dostępu do katalogu roota.
+   Próbując zmienić prawa dostępu do katalogu roota za pomocą polecenia chmod
+   otrzymuję informację że ta operacja jest niedozwolona. Dlaczego tak?
+   O to już muszę mojego prowadzącego zapytać. Jedyne co wywnioskowałem to to,
+   że nie powienienem tam grzebać skoro katalog jest tak ładnie zabezpieczony.
+
+14.Kombinacja klawiszy Ctrl+Alt+ F1-F6 Przełącza mnie na inny terminal.
+   Ctrl+Alt+F7 wraca mnie do początkowego terminala. Jest to z wyglądu inny
+   terminal tylko po co to?
+
+

@@ -1,0 +1,16 @@
+Na ostatnich zajeciach 23.10.2021
+Dowiedziałem się jak działają prawa użytkowników,jak się je nadaje czy też zabiera.
+Co oznaczają opisy klas.
+u–użytkownik( user)
+g–grupa(group)
+o–inni(others)
+a–wszyscy(all)
+Przykład odebrania grupie prawa do odczytu i wykonania do "plik.txt"
+chmod g-rx plik.txt
+1.chmod
+2.komu
+3.nadac/odebrac znak -/+
+4.jakie prawo
+5.nazwa pliku
+Nauczyłem się też jednej bardzo ważnej zasady-"NIE NADAJEMY PRAWA 777 BO PO ŁAPACH!"
+ 

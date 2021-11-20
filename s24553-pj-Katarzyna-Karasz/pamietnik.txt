@@ -2,3 +2,9 @@
 Pamiętnik Kasi - Czego się nauczyłam :-)
 
 - Nauczyłam się jak korzystać z Gita
+
+
+05.11.2021r.
+
+- Nauczyłam się jak działają uprawnienia do plików i folderów.
+- Wiem, że działają tak samo na macOS i Linuxie.

@@ -1,0 +1,15 @@
+1. Uruchomiłam terminal 
+2. Wpisałam ls co wyświetliło zawartość katalogu 
+3. Wpisałam pwd, żeby zobaczyć gdzie aktualnie jestem i porównałam z interfejsem graficznym 
+4. wpisałam cd ../../../Desktop
+5. Wpisałam pwd i wyświetło /c/Users/marta/Desktop
+6. Wpisałam ls i wszystko na pulpicie się wyświetliło 
+7. Tak otrzymamy to samo
+8. Będąc w folderze 'Desktop' wpisałam ls ../ i wyświetliło zawartość folderu domowego 
+9. Wpisałam cd ../ a następnie cd Pictures/ i przeszłam folderu Obrazy
+10. Wpisałam pwd
+11. Po wpisaniu cd ./././././ zostałam w tym samym katalogu 
+12. Wpisałam cd /c/Useres/marta/ 
+13. Po wpisaniu cd /root na moim komputerze pokazało, że nie ma takiego katalogu. 
+Natomiast na linuxie powinno pokazać "Permision denied"
+14. Na windowsie nie dzieje sie nic natomiast na linuxie pokazuje sie tryb tekstowy (inny terminal)

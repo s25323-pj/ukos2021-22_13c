@@ -1,0 +1,53 @@
+0.
+Test komendy:
+
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd$ ls -a
+.                        s24279-pj                    s24729-pj-lukasz-soldatke        s25670-pj-mateusz-lech
+..                       s24399-pj-Aleksander-Opalka  s25067-pj-Paulina-Debis          s26286-pj-rafal-sojecki
+.git                     s24553-pj-Katarzyna-Karasz   s25323-pj                        t0meck
+s24256-pj-Marta-Szpilka  s24586-pj-Krystian-Jank      s25535-pj-Sebastian-Kalwasinski
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd$ ls -a | grep D
+s25067-pj-Paulina-Debis
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd$ ls -a | grep S
+s24256-pj-Marta-Szpilka
+s25535-pj-Sebastian-Kalwasinski
+ubuntu@bss-ubu1804:~/Desktop/Zajeci
+
+Wygląda na to, że dopisanie do komendy ls -a "| grep <literka>" działa jako taka wyszukiwarka.
+
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd$ ls -a | grep D > ListaPlikowZLiterkaD.txt
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd$ ls
+ListaPlikowZLiterkaD.txt     s24553-pj-Katarzyna-Karasz  s25323-pj                        t0meck
+s24256-pj-Marta-Szpilka      s24586-pj-Krystian-Jank     s25535-pj-Sebastian-Kalwasinski
+s24279-pj                    s24729-pj-lukasz-soldatke   s25670-pj-mateusz-lech
+s24399-pj-Aleksander-Opalka  s25067-pj-Paulina-Debis     s26286-pj-rafal-sojecki
+
+Komenda ls -a | grep D > ListaPlikowZLiterkaD.txt spowodowała, że do mojego katalogu dopisał się plik tekstowy o 
+nazwie takiej samej jaką wpisałam do komendy, a w srodku pliku znajdowała się taka zawartość:
+"ListaPlikowZLiterkaD.txt
+s25067-pj-Paulina-Debis"
+
+"|" tak jakby znaczy "znajdz"
+">" nadpisz
+
+1. 
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd/s25067-pj-Paulina-Debis/Zadania$ ps
+  PID TTY          TIME CMD
+  818 pts/0    00:00:00 bash
+ 2475 pts/0    00:00:00 ps
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd/s25067-pj-Paulina-Debis/Zadania$ ps -a
+  PID TTY          TIME CMD
+ 2476 pts/0    00:00:00 ps
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd/s25067-pj-Paulina-Debis/Zadania$ ps x
+PID TTY STAT TIME COMMAND
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd/s25067-pj-Paulina-Debis/Zadania$ ps aux
+USER PIS %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
+
+Znak zapytania w kolumnie drugiej jest przy TTY, czyli TeleTYpewriter.
+
+2.
+Uruchomiłam terminal i za pomocą komendy ps -aux sprawdziłam jaki numer PID ma ten proces. W tym przypadku było to 1159. Następnie użyłam komendy kill 1159 i ku mojeju zaskoczeniu, udało się, terminal się wyłączył.
+Skorzystałam potem też z komendy killall shell, po której terminal również się wyłączył, ale szczerze mówiąc nie widzę
+różnicy pomiędzy tymi dwoma komendami w praktyce.
+
+SIGKILL – unicestwienie procesu co może powodować utratę wszystkich zawartych w nim danych.

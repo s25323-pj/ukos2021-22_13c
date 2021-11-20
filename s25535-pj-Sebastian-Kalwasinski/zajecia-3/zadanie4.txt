@@ -1,0 +1,23 @@
+====================
+Wykonanie zadań nr.4
+====================
+
+================================================================================
+1
+. Wpisuję polecenie gedit (gimp mnie chyba nie lubi), następnie wstrzymuję
+  proces kombinacją klawiszy Ctrl+Z. Terminal jest znów zdatny do użytku, ale 
+  mój gedit nie reaguje. Po wpisaniu polecenia "jobs" widzę że proces
+  został wstrzymany.
+
+  Po wpisaniu polecenia "bg" (BackGround) mój "notatnik" wrócił do życia, a
+  termninal jest zdatny do użytyku. Polecenie "fg" (ForeGround) ponownie
+  umieszcza mój proces "notatnika" na pierwszy plan, a terminal jest
+  zajęty. Ctrl+C uśmierca gedita.
+
+. Wykonuję polecenia "gedit &" i "geany &". Programy uruchomiły się w tle,
+  a mój terminal jest zdatny do użytku. Przydatne gdy jakiś proces musi
+  działać i jednocześnie potrzebuję korzystać z terminala.
+ 
+. W zadaniach jest haczyk/błąd ponieważ gdy przywrócę proces gedit na           <---Do omówienia 
+  pierszy plan to nie wykonam polecenia jobs.(Albo czegoś nie wiem).
+  

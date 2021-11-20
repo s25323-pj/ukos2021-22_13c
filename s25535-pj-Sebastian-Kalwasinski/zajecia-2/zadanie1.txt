@@ -1,0 +1,120 @@
+====================
+Wykonanie zadań nr.1
+====================
+
+================================================================================
+1.Prawa dostępu.
+  r- Umożliwia mi odczytanie zawartości pliku, lub katalogu. Jeśli jest to 
+  katalog to polecenie ls pokaże mi jego zawartość. Nie mam możliwośći wejścia
+  do sprawdzanego katalogu. W przypadku pliku jego zawartość mogę wyświetlić za
+  pomocą polecenia cat, lub wchodząc do niego za pomocą vim-a. 
+
+  By utworzyć nowy katalog/plik w innym katalogu potrzebuję praw dostępu w+x
+  To znaczy że muszę mieć prawo do edycj i wejścia do katalogu. Prawo dostępu
+  read nie jest wymagane.
+
+  Kukułcze jajo do którego nie mam żadnych praw dostępu mogę usunąć jeśli 
+  mam przydzielone prawa dostępu w+x do katalogu nadrzędnego.
+ 
+  Zwróciło moją uwagę że nawet jeśli nie mam praw dostępu read do konkretnego
+  katalogu to i tak mogę edytować jego zawartość. Haczyk polega na tym że
+  muszę wiedzieć co się w nim znajduje. Tabulator mi w tym przypadku nic nie 
+  podpowie.
+
+
+================================================================================
+  Midnight commander boli w oczy. Czas mu przywdziać innego skina. :D
+  Uruchamiam w terminalu poleceniem mc. Program ma tą zaletę że za pomocą
+  kombinacji Alt+t mogę dostosować widok. Umożliwia mi to obserwację na bieżąco
+  jak zmieniają się prawa dostępu do poszczególnych katalogów ułożonych
+  jeden pod drugim. Jest to narzędzie, które warto zapamiętać na przyszłość.
+  
+  Mam nadzieję że nigdzie nie namieszałem. Sprawdzając po kolei wszystkie
+  kombinacje praw dostępu dla katalogów i plików, oraz co można co nie
+  było niewiarygonie nużące i mogłem coś namieszać, lub źle zinterpretować.  
+
+================================================================================
+2.Trochę zaśmieciłem maszynę wirtualną, ale po to jest.
+
+  Polecenie chmod wykonuję wykorzystując ścieżkę bezwzględną
+
+  Usuwam wszelkie prawa dostępu do katalogu bierzącego.
+  Nie wyrzuciło mnie z katalogu, ale nie mogę użyć ls, stworzyć pliku,
+  ani przejść do katalogu podrzędnego. pwd i cd dalej działają.
+
+  Teraz czas na wersję z nadkadalogiem.
+  Usuwam prawa dostępu do nadkatalogu. Jestem dalej w katalogu bieżącym,
+  mogę tworzyć pliki, użyć ls itd., ale nie mogę cofnąć się do 
+  katalogu nadrzędnego polecenie  cd .. . Wyjść można omijając katalog
+  nadrzędny, ale o powrocie nie będzie już mowy.
+
+  Czy mogę przeskoczyć do XYZ przez ABC. Nie. Nie przepuszcza mnie.
+  To tak jak z wieżą, której strzeże smok. Księżniczka zaprasza mnie do siebie,
+  ale smok jest innego zdania... To tyle ze schadzki.
+
+================================================================================
+3.Sam ze sobą rozmawiałem, ale zasada jest ta sama i
+  mam więcej czasu na przemyślenia co się aktualnie dzieje na ekranie.
+
+  Piszę echo, potem tekst który chcę przekazać,
+  a na końcu plik w którym ten tekst ma zostać zapisany.
+
+  Np.  echo "moj krzyk" > plik
+
+  Utworzyny w ten sposób plik wyświetli tekst "mój krzyk",
+  zarówno za polecenia cat plik jak i pomocy vim-a
+
+  Polecenia cat w tym przypadku jest używane do wyświetlania zawratwości pliku.
+  Polecenie echo jak sama nazwa wskazuje papuguje to co wpisujemy
+  za pomocą klawiatury tak jakbyśmy krzyczeli w długim pustym tunelu.
+  echo, echo, echo.....
+
+  Różnica jest taka że polecenie echo może zapisać to
+  co wykrzyczeliśmy w pliku tekstowym.
+  W prawdziym życiu jak nakrzyczymy na otwarte pudełko
+  to po otwarcu go nie nakrzyczy na nas z powrotem  xD.
+
+  Zmiana operatora > na operator >> powoduje że polecenie
+  echo "mój krzyk" >> plik 
+  nie nadpisuje zawartości mojego pliku (nie kasuje wcześniejszego krzyku)
+  tylko dodaje następną linię tesktu od nowego wiersza.
+
+  Krzyk
+  Głośniejszy krzyk
+  Ała, moje gardło 
+  (Odgłosy głęboko kaszlącego palacza)
+
+  Można pisać wiersze coddzienie po linijce.
+
+================================================================================
+  Polecenie tail służy do wyświetlania ostatnich wierszy
+  danego pliku. Przynajmniej tak mi internet powiedział.
+  Narazie uczę się sprawnie poruszać po poleceniu man.
+
+  Wykonuję ćwiczenie jeszcze raz z tym że w drugim terminalu mam podgląd.
+  Polecenie tail -f plik sprawia że widzę na bieżąco co się dzieje
+  z moim plikiem zapełnionym romantycznym wierszem.
+
+  W pierszym terminal dodaję za pomocą polecenia echo następne linie tekstu.
+  Drugi terminal wyświetla zawartość mojego pliku.
+  Lubię widzieć co się dzieje i co robię.
+
+  Wnioski i obserwacje.
+  Dwie osoby otwierając dwa terminale jeden do podglądu drugi do pisania
+  mają swojego rodzaju gadu-gadu gdzie mogą obgadywać na lekcjach
+  kogo chcą i kiedy chcą, lub podawać sobie odpowiedzi. :D
+
+================================================================================
+4.Stworzyłem katalog o nazwie public_html i umieściłem  w nim plik z podaną
+  zawartością. Narazie nie zmam się na HTML-u więc zostawię to tak jak jest.
+  Jedynie to mogę powiedzieć że zawartość różni się wyglądem więc spełnia
+  trochę inną funkcję niż przechowywanie czystego tekstu.
+
+  Minimalne prawa dostępu jakie należy przydzielić to prawo
+  execute do katalogu public_html i read do plik strona.html.
+  Dlaczego tak a nie inaczej? By móc dostać się do pliku strona.html porzebne
+  są prawa dostępu execute dla jego nadkatalogu (public html.)
+  Natomast do samego pliku wchodzić nie musimy więc wystarczy prawo dostępu read
+  by odczytać jego zawartość.	
+
+

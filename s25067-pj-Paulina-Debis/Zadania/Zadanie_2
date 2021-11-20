@@ -1,0 +1,59 @@
+1. Utworzyłam sieć katalogów i podkatalogów, oraz kilka plików w niektórych z nich. Aby pozmieniać prawa dostępu
+użyłam komendy chmode, np. chmode g+r, co miało na celu dać grupie możliwość odczytu (read), natomiast usunełam
+możliwości zapisu, czy praw do wykonywania przez grupę (chmode g-w, chmode g-x). Dla różnych katalogów i plików
+ustawiłam odmienne warianty. Następnie z kolegą próbowaliśmy na wzajem wejść do swoich katalogów, że sprawdzić 
+jakie czynności możemy wykonać dla dajego katalogu i czy zgadza się to z tym jak wcześniej próbowaliśmy dane prawa
+przypisać.
+
+2. Założyłam przykładową strukturę katalogów, a następnie komendą chmod usunełam wszystkie prawa dostępu do
+katalogu, w którym byłam obecnie oraz katalogu nadrzędnego.
+Polecenie cd możemy wykonać tylko wtedy, kiedy posiadamy prawo do czytania.
+Polecenie chmod możemy wykonać kiedy jesteśmy właścicielem pliku/katalogu.
+W przypadku kiedy nie mamy prawa wstępu do katalogu ABC ale mamy dostęp do katalogu podrzędnego XYZ, to nie mamy 
+możliwości wejść do katalogu XYZ.
+
+3. Utworzyłam plik komendą vim, zmieniłam prawa dostępu przy użyciu chmod, wpisałam treść, a komenda cat pozwolila na wyświetlenie zawartosci pliku bez potrzeby otwierania go.
+Różnica pomiędzy > i >> jest taka, że > nadpisuje a >> dołącza plik.
+Komenta tail -f służy do wyprowadzania dołączonych danych w miarę wzrostu pliku.
+
+4. Utworzyłam pliki z odpowiednią treścią, względem treści zadania. Następnie dodałam wszystkie 
+uprawnienia. Na terminalu wszystko wygląda na założone poprawnie, proces przebiegał bezproblemowo, natomiast nie 
+udało mi się odpalić strony html na serwerze szuflandii. Wydaje mi się, że jest to wina tego, że wpisuje blędną
+nazwę użytkownika, ale wszystkie pomysły co tam wpisać żeby działało się na razie skończyły. Jak linuxowo zmądrzeje
+troche po kilku kolejnych romantycznych randkach, gdzie jestem tylko ja, laptop, kawa i ubuntu to może się uda.
+Ale jeżeli miałabym zgadywać jakie są minimalne uprawnienia, żeby stona była widoczna to zakładałabym, że wystarczy
+pozwolić wszystkim na czytanie pliku.
+
+5. Wyszło mi coś takiego:
+ubuntu@bss-ubu1804:~/Desktop/Zajecia$ ls -l
+total 8
+-rw-rw-r--  1 ubuntu ubuntu    0 Nov 10 19:33 plik_test
+drwxrwxr-x  2 ubuntu ubuntu 4096 Nov 10 15:43 public_html
+drwxrwxr-x 15 ubuntu ubuntu 4096 Nov 10 15:12 trzeci-zjazd
+ubuntu@bss-ubu1804:~/Desktop/Zajecia$ umask 0644
+ubuntu@bss-ubu1804:~/Desktop/Zajecia$ touch plik_test2
+ubuntu@bss-ubu1804:~/Desktop/Zajecia$ ls -l
+total 8
+-rw-rw-r--  1 ubuntu ubuntu    0 Nov 10 19:33 plik_test
+-----w--w-  1 ubuntu ubuntu    0 Nov 10 19:42 plik_test2
+drwxrwxr-x  2 ubuntu ubuntu 4096 Nov 10 15:43 public_html
+drwxrwxr-x 15 ubuntu ubuntu 4096 Nov 10 15:12 trzeci-zjazd
+ubuntu@bss-ubu1804:~/Desktop/Zajecia$ umask 0777
+ubuntu@bss-ubu1804:~/Desktop/Zajecia$ touch plik_test3
+ubuntu@bss-ubu1804:~/Desktop/Zajecia$ ls -l
+total 8
+-rw-rw-r--  1 ubuntu ubuntu    0 Nov 10 19:33 plik_test
+-----w--w-  1 ubuntu ubuntu    0 Nov 10 19:42 plik_test2
+----------  1 ubuntu ubuntu    0 Nov 10 19:42 plik_test3
+drwxrwxr-x  2 ubuntu ubuntu 4096 Nov 10 15:43 public_html
+drwxrwxr-x 15 ubuntu ubuntu 4096 Nov 10 15:12 trzeci-zjazd
+ubuntu@bss-ubu1804:~/Desktop/Zajecia$ umask 0020
+ubuntu@bss-ubu1804:~/Desktop/Zajecia$ touch plik_test4
+ubuntu@bss-ubu1804:~/Desktop/Zajecia$ ls -l
+total 8
+-rw-rw-r--  1 ubuntu ubuntu    0 Nov 10 19:33 plik_test
+-----w--w-  1 ubuntu ubuntu    0 Nov 10 19:42 plik_test2
+----------  1 ubuntu ubuntu    0 Nov 10 19:42 plik_test3
+-rw-r--rw-  1 ubuntu ubuntu    0 Nov 10 19:43 plik_test4
+drwxrwxr-x  2 ubuntu ubuntu 4096 Nov 10 15:43 public_html
+drwxrwxr-x 15 ubuntu ubuntu 4096 Nov 10 15:12 trzeci-zjazd

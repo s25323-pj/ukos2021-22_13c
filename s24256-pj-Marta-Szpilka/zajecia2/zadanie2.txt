@@ -1,0 +1,24 @@
+1. Utworzyłam podkatalogi (mkdir) oraz pliki tekstowe (touch nazwa.txt). Następnie przydzieliłam różne prawa dostępu(np. chmod 750 nazwapliku). Później weszłam w katalog Kasi na szuflandii i mogłam tylko odczytać jej pliki, po zmianie praw dostępu przez Kasie dla mnie stworzylam plik (touch "kukułcze jajko") w jej katalogu.
+2. Usunęłam wszystkie prawa dostępu do katalogu bieżącego (chmod 000 nazwakatalogub) oraz katalogu nadrzędnego (chmod 000 nazwakatalogun).
+ 2.1 Polecenia cd nie można wykonać do katalogów bez prawa do czytania ich, w tym przypadku nie możemy wejść do żadnego z katalogów.
+ 2.2 Chmod możemy wykonać, jeżeli jesteśmy administratorami.
+ 2.3 Nie możemy "przeskoczyć" do bieżącego katalogu, w przypadku, gdy nie mamy dostępu do katalogu nadrzędnego.
+3. Utworzyłam pusty plik (touch pustyplik) dodałam prawa dostępu do katalogu (chmod 750, aby moja grupa mogła odczytywać i dodawać tekst do pliku)
+- echo treść > plik - do nadpisywania pliku  
+- echo treść >> plik - do dopisania pliku
+- cat plik - do odczytywania pliku 
+- tail -f plik - "tail" wyświetla końcową część pliku, jeżeli plik jest większych wymiarów, "tail -f" wyświetla plik oraz rzeczy dopisywane w tym samym czasie
+4. Stworzyłam katalog (mkdir public_html) następnie umieściłam w nim plik oraz wpisałam zawartość (vim strona.html), aby zawartość się wyświetlała dla grupy 'other' muszą być ustawione prawa dostępu r-x (chmod 755). 
+
+Zadanie:
+
+-umask - jest to maska, która nadaje prawa dostępu dla nowo tworzonych plików. (u mnie po wpisaniu umask pojawiło się 0022 co oznacza, że nowe pliki tworzone będą 0666 & ~022 = 0644 = rw-r--r--) po próbnej zmianie umask na 0044 nowy plik ma prawa rw--w--w- = 0666 & ~044 = 622.
+
+- 0777 - uprawienia, gdy maska to 0000 dla katalogów;
+- 0666 - uprawienia, gdy maska to 0000 dla plików;
+- umask 0022 daje prawa:
+	- do katalogu(d)rwxr-xr-x 
+	- do pliku rw-r--r--
+- umask 0044 daje prawa:
+	- do katalogu(d)rwx-wx-wx 
+	- do pliku rw--x--x-

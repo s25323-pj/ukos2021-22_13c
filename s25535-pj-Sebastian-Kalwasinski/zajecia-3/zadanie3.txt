@@ -1,0 +1,36 @@
+====================
+Wykonanie zadań nr.3
+====================
+
+================================================================================
+1.Wpisuję polecenie cat bez parametrów. Teraz zamiast wpisywać kolejne polecenia 
+  mogę wypisywać w terminalu co mi się podoba i nic się nie stanie.
+  Terminal jestem zablokowany dla poleceń.
+  
+2.Kombinacja klawiszy Ctrl+c, przywróciła możliwość wpisywania poleceń. JeJ!
+  Tak naprawdę to zabiła pierwszoplanowy proces w terminalu w tym przypadku
+  uruchomiony poleceniem cat.
+
+================================================================================
+3.
+. Wpisuję polecenie cat > wynik1.txt, następnie tekst w terminalu po czym
+  stosuję kombinację klawiszy Ctrl+C.
+
+. W moim pliku wynik1.txt znajduje się całe nic ponieważ uśmierciłem proces
+  uruchomiony poleceniem cat przed zakończeniem jego działania bez pytania
+  czy już skończył robić swoje czy nie.
+
+. Wpisuję polecenie cat > wynik2.txt, następnie tekst w terminalu po czym
+  stosuję kombinację klawiszy Ctrl+D, dwa razy bo jeden raz nie łapie.
+
+. Tym razem w moim pliku wynik2.txt znajduje się wpisany przeze mnie tekst.
+  To dlatego że kombinacja klawiszy Ctrl+D zabija pierwszoplanowy proces,
+  ale przed jego zatrzymaniem grzecznie czeka aż ten skończy robić to co robi.
+
+
+  
+
+
+  
+
+  
