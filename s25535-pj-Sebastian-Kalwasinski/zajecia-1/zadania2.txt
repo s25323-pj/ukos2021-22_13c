@@ -22,8 +22,8 @@ Wynokanie zadań nr.2
 4.Polecenie touch ukos/to/jest/dluga/nazwa/dane.txt
 
 5.Do usunięcia wszytkich plików z rozszerzeniem ".txt" używam polecenia:
-  rm *.txt . Polecenie rm służy do usówania plików, lub katalogów,
-  gwiazdka służy jako placeholder i oznacza (wszystko), a w połączeniu
+  rm *.txt . Polecenie rm służy do usuwania plików, lub katalogów,
+  gwiazdka służy jako wildcard i zajmuje miesjce za inne znaki, a w połączeniu
   z rozszerzeniem .txt tworzy kombinację mówiącą: usuń wszystko z rozszerzeniem
   ".txt"
   Coś takiego:"rm *.txt" ---> "rm "WSZYTKO_CO_MA_ROZSZERZENIE_.TXT".txt."
@@ -31,12 +31,12 @@ Wynokanie zadań nr.2
   bo możemy się pozbyć czegoś czego nie chcemy.
 
 6.By usunąć pusty katalog zadanie2 używam komendy rmdir ukos/katalog/katalog2,
-  które usówa tylko katalog2. Podobie jak w przypadku toworzenia katalogów,
+  które usuwa tylko katalog2. Podobie jak w przypadku toworzenia katalogów,
   możemy rówież usunąć nadkatalogi za pomocą argumentu -p (parents),co sprawi
   że usuniemy nie katalog2, ale całą gałąź katalogów. Warunek jest taki że
   ostatni podkatalog w tym przypadku katalog2 jest pusty.
 
-7.Katalog klamka usówam za pomocą plecenia rm -r ponieważ zawiera on pliki,
+7.Katalog klamka usuwam za pomocą plecenia rm -r ponieważ zawiera on pliki,
   co uniemożliwia mi użycie polecenia rmdir, które jest używane w przypadku 
   katalogów.
 

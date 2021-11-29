@@ -1,0 +1,5 @@
+Zadanie 8)
+
+Może być wiele powodów wystąpienia takiego problemu np.:
+- przekroczony limit przydziału dyskowego dla konta (quota)
+- brak odpowiednich praw dostępu do katalogu/-ów

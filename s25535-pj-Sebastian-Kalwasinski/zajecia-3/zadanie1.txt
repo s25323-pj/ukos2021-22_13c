@@ -13,8 +13,8 @@ Wykonanie zadań nr.1
   jeszcze z DUŻYM P i małym p. Wielkość litery ma znaczenie.
   Podając małe p w komedzie ls -a | grep p wylistowało mi wszystkie katalogi
   i pliki zawierające małą literę p niezależnie od tego czy jest na początku
-  wyrazu czy nie.
-
+  wyrazu czy nie. Polecenie "grep -i d" znajdzie wszystkie "d" niezależnie
+  od wielkości. Argument -i - ignoruj rozmiar liter.
 
   Wykonuję komendę ls -a | grep D > List.txt 
   Polecenie wykonało się tak jak w pierwszym przypadku z tą różnicą że 
@@ -38,7 +38,7 @@ Wykonanie zadań nr.1
   = ls -a = Wylistuj wszytko
   =   |   = Uwaga następna komenda!
             Łapaj wynik poprzedniczki.(Następuje Podanie).
-  = grep D= Znajdź wszytkie pliki/katalogi z DUŻYM D
+  = grep D= Znajdź wszytkie wiersze z DUŻYM D
             w tym co mi wylistowała ls -a 
 
 
@@ -63,7 +63,7 @@ Wykonanie zadań nr.1
 
   Wpisuję top
 
-  Wyświetla mi listę procesów liuxa, która jest na bieżąco aktualizowana.
+  Wyświetla mi listę procesów w liuxie, która jest na bieżąco aktualizowana.
   To za dużo dla takiego nowicjusza jak ja. Niech narazie będzie ps.
 
   Wpisuję po kolei ps -a, ps x, ps axu
@@ -93,16 +93,16 @@ Wykonanie zadań nr.1
 
   Co to dla mnie znaczy?
 
-  = ps -a  = wylistuj procesy nikogo?
-  = ps u   = wylistuj procesy właścieciela. Mówi samo za siebie.
+  = ps -a  = wylistuj procesy oprócz procesów lidera sesji i niezwiązanych
+             z żadnym terminalem.
+  = ps u   = wylistuj procesy właścieciela.
+  
+  = ps aux = Wilistuj wszystkie procesy w systemie
 
-  = ps aux = Pytanie do prowadzącego Czy "ps ax" różni się czymś                <--------Do omówienia
-             od "ps aux" pozatym że w przypadku "ps ax"
-             Nie ma paru kolumn  (USER, %CPU, %MEM)?
 
-  A co oznacza znak zapytania "?" w drugiej kolumnie TTY (TeleTYpewriter)
-  Jak dla mnie to że system nie ma pojęcia, jakiej konsoli używa proces
-  albo w ogóle nie używa?
+  Znak zapytania "?" w drugiej kolumnie TTY (TeleTYpewriter) oznacza
+  że proces nie używa terminala bo go poprostu nie potrzebuje.
+
 
 2.By wyświetlić wszytkie procesy bash używam polecenia ps axu | grep bash,
   podobnie w przypadku roota: ps axu | grep root .

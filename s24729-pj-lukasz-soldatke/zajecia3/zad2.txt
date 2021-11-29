@@ -1,0 +1,10 @@
+Zadanie 2)
+
+1. Uruchomiłem edytor gedit.
+2. Znalazłem jego numer PID (1019) za pomocą <ps aux | grep gedit>.
+3. Po użyciu polecenia <kill 1019> okno edytora tekstu zamknęło się. Użycie polecenia <kill -SIGKILL 1019> było możliwe i również zamknęło okno 
+	programu.
+4. Polecenie <killall shell> nie zadziałało (shell: no process found).
+5. Polecenie <kill> nie zadziała dla wszystkich procesów. Dla niektórych z nich może pojawić się informacja o tym, że ta 
+	operacja nie jest dozwolona. Dla przykładu wynik polecenia dla procesu z PID 1 (/sbin/init):
+		bash: kill: (1) - Operation not permitted

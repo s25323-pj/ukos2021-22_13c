@@ -1,0 +1,7 @@
+Zadanie 3)
+
+Po nadaniu plikowi i katalogowi, w którym plik się znajduje odpowiednich uprawnień (r-odczyt i w-zapis) można komunikować się poprzez współdzielony plik 
+korzystając z komend <echo ["treść komunikatu"] > plik> do zapisania treści wiadomości w pliku oraz <cat plik> do odczytywania z niego. Użycie operatora ">" 
+spowoduje zapisanie treści wiadomości nadpisując całą poprzednią zawartość pliku, z kolei użycie operatora ">>" spowoduje dopisanie treści wiadomości do pliku bez 
+usuwania tego co plik zawierał wcześniej. Komenda <tail -f> uruchomiona w innym terminalu pozwala na odczytywanie zawartości pliku, a więc wiadomości w czasie
+rzeczywistym.

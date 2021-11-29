@@ -1,0 +1,51 @@
+Zadanie 1.
+wzgledna - cd ../../../kot/ma/ale
+bezwzgledna - cd/tmp/ukos/kot/ma/ale (w tej sciezce nie jest istotne to gdzie sie teraz znajdujemy)
+
+Zadanie 2.
+mkdir -p a/b/c (tworzy katalog a, w nim katalog b, a w nim katalog c)
+
+Zadanie 3.
+
+mv (sciezka do katalogu ktory chcemy przeniesc) (sciezka katalogu, gdzie chcemy ten katalog pierwszy przeniesc)
+
+mv /tmp/ukos/kot/ma/ale tmp/ukos/ala/i
+lub
+mv ../../../kot/ma/ale ../../i/
+
+
+Zadanie 4.
+ps -aux (zczytujemy nr PID)
+kill 	-sigkill (numer PID)
+	-kill (nr PID)
+	-9 (nr PID)
+
+Zadanie 5.
+ls | grep (literka)
+
+zeby znalezc wszystkie wiersza ZACZYNAJACE sie od konkretnego ciagu znakow -> ls | grep -e '^(cos co chcemy znalezc)'
+
+wazne strony internetowe z info o tym regexr.com, regex101.com, regular-expression.info
+
+ls -p | grep -v / | grep -e ^n
+pierwszy czlon -> usun katalogi
+drugi czlon -> wybierz wszystko zaczynajace sie od literki n
+
+Zadanie 6.
+1. chmod o=x 1
+2. chmod g=r 4
+3. chmod u=wrx 7
+
+o=- kasuje wszystkie uprawnienia dla wszystkich
+
+Zadanie 7.
+ls -p | grep -v / >plik
+
+Zadanie 9.
+Uzywamy klawisza tab
+
+Zadanie 10.
+end na końcu wiersza
+lub
+ctrl+z bg
+

@@ -3,3 +3,19 @@ Dzisiaj nauczyłem się:
 - Komend i struktury katalogów Linuxa;
 - Jak skonfigurować maszynę wirtualną;
 - Podstaw gita
+
+2021.10.23
+Dzisiaj nauczyłem się:
+- Typów plików Linuxa;
+- Zarządzania prawami dostępu do plików i katalogów w Linuksie
+
+2021.11.06
+Dzisiaj nauczyłem się:
+- Zarządzania procesami, ich wyszukiwania, wyświetlania szczegółów ich dotyczących, przenoszenia procesów 
+	pomiędzy tłem a pierwszym planem;
+- Łączenia poleceń oraz przekierowania ich wyników do plików zamiast na terminal czy do kolejnych 
+	poleceń
+
+2021.11.20
+Dzisiaj nauczyłem się:
+- Przypomniałem sobie najważniejsze rzeczy z poprzednich zajęć

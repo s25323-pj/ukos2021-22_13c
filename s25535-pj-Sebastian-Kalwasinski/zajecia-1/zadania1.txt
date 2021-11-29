@@ -8,7 +8,7 @@ Wykonanie zadań nr.1
 
 2.By przejżeć zawartość aktualnego katalogu używamy samego polecenia ls , lub
   ls z dodatkiem dodatkowych argumentów. np. ls -l, które pokaże nam nie tylko
-  samą zawartość katalogu, ale i szczegóły jego zawartości: Prawa dostępu dla
+  samą zawartość katalogu, ale i szczegóły jego zawartości: Uprawnienia dla
   poszczególnych osób, rozmiar w bitach, datę utworzenia/edycji itd.
 
 3.By określić moją pozycję w terminalu używam polecenia pwd, które wyświetla
@@ -50,14 +50,15 @@ Wykonanie zadań nr.1
    domogego jest to cd /home/"katalog domowy użytkownika"
 
 13.Polecenie cd /root wywala mi błąd Permission denied. Oznacza to że nie 
-   nie mam przydzielonych praw dostępu do katalogu roota.
+   nie mam przydzielonych uprawnień do katalogu roota.
    Próbując zmienić prawa dostępu do katalogu roota za pomocą polecenia chmod
-   otrzymuję informację że ta operacja jest niedozwolona. Dlaczego tak?
+  otrzymuję informację że ta operacja jest niedozwolona. Dlaczego tak?
    O to już muszę mojego prowadzącego zapytać. Jedyne co wywnioskowałem to to,
    że nie powienienem tam grzebać skoro katalog jest tak ładnie zabezpieczony.
 
 14.Kombinacja klawiszy Ctrl+Alt+ F1-F6 Przełącza mnie na inny terminal.
-   Ctrl+Alt+F7 wraca mnie do początkowego terminala. Jest to z wyglądu inny
-   terminal tylko po co to?
+   Ctrl+Alt+F7 wraca mnie do początkowego terminala. Dodatkowe terminale,
+   umożliwiają uruchomienie programów i wpisywanie poleceń nawet gdy z jakiegoś
+   powodu nie mamy dostępu do środowiska graficznego (desktop-a).
 
 

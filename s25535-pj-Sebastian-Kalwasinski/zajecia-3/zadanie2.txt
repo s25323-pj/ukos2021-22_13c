@@ -19,31 +19,21 @@ Wykonanie zadań nr.2
   Polecenie pkill gedit ma to samo działanie co kill tylko używa nazwy procesu.
   
   Polecenie kill (numer PID) skutecznie uśmierca edytor tekstu. Numer PID za
-  każdym razem jest inny, w moim przypadku z każdym kolejnym edytorem coraz
-  większy. To jest zamierzone działanie systemu, które powstrzymuje przed
-  ponownym wykorzsytaniem danego numeru PID, aż osiągną limit po którym 
-  nastąpi "wrap around" czyli system zacznie jechać od nowa pomijając
-  wciąż używane numery.
+  każdym razem może być inny, w zależności od tego w jaki sposób działa
+  mechanizm rezerwujący zasoby na utworzenie procesu i nadnie numeru  PID.
+  
+  Warunek jest taki że nie może być dwóch takich samych numerów PID.  
+  
 
 ================================================================================
 4.Polecenie killall shell sprawiło mi dużo problemów, bo w zasadzie nic się
-  nie działo, wywaliło mi że nie ma takiego procesu. Pytanie do prowadzącego:
-  
-  Co się tak właściwie stało? Aż ciocię wiki odwiedziłem czym jest shell:
-  "Powłoka systemowa - program komputerowy pełniący rolę pośrednika pomiędzy
-  systemem operacyjnym lub aplikacjami a użytkownikiem, przyjmując jego
-  polecenia i „wyprowadzając” wyniki działania programów." Co ja tak właściwie
-  chcę zabić skoro według terminala nie mam procesów związanych z shell-em.
+  nie działo, wywaliło mi że nie ma takiego procesu.
   
   Wpisałem polecenie "kill -9 bash" zabiło mi terminal. To może o to chodziło?
-  Ciocia wiki: "Bash to jedna z najpopularniejszych powłok systemów uniksowych."
-  Na nagraniu z wykładu nr.1 też nie znalazłem rozwiązania.
+  W zasadzie bash to powłoka (shell) systemów UNIX-owych. Zabijając basha
+  zabiłem shella?
 
-  Jeśli dobrze rozumuję bash jest shellem mojego systemu.
-  Dopytam się na następnych zajęciach bo mnie głowa rozboli o późnej godzinie.  <--- Do omówienia
- 
-
-  !!!<<<=== DO DOKOŃCZENIA ===>>>!!!
+  
  
 
 ================================================================================

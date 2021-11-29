@@ -1,0 +1,15 @@
+1. Wzgledna: cd ../../../kot/ma/ale Bezwzgledna: cd /tmp/ukos/kot/ma/ale
+2. mkdir -p /tmp/ukos/kot/ma/ale/jan/kowalski
+3. mv /tmp/ukos/kot/ma/ale /tmp/ukos/ala/i/
+
+   lub 
+
+   mv ../../../kot/ma/ale ../../i/
+
+4. kill -9/-SIGKILL/-KILL numer_pid
+5. ls | grep -e '^al' lub ls -d al*
+6. chmod 741 ala lub chmod u = rwx, g = r, o = x
+7. ls > lista.txt
+8. brak praw do wykonania komendy, pelny dysk
+9. TAB
+10. program & lub Ctrl + Z bg

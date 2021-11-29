@@ -97,8 +97,8 @@ Wykonanie zadań nr.2
   z tym że nie jest w stanie nadać praw dostępu execute.
 
   Aktualizując definicję: umask określa jakie prawa dostępu przyznawać
-  nowo-utworzonym plikom z tym że częściej używa się go
-  by je odejmować niż przyznawać ich więcej. Takie wygodne narzędzie
+  nowo-utworzonym plikom i katalogom używa się go do ustalenia domyślych
+  uprawnień od danej chwili. Takie wygodne narzędzie
   do kontroli kto, gdzie, co, by nie pisać ciągle chmod.
 
   Na końcu jeszcze jest pytanie "jaka operacja logiczna

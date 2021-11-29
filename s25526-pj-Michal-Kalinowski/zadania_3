@@ -1,0 +1,26 @@
+Zadanie 1
+
+1.Wyświetla aktualnie działające procesy.
+2.Za pomocą tej komendy możemy wybrać wszystkie procesy zarówno liderów sesji jak i procesów niepodłączonych do żadnego terminala (ps man) :)
+3.Uruchamia restrykcje w stylu BSD. Powoduje wymienienie wszystkich procesów których właścicielem jest aktualny użytkownik.
+4.Wyświetla aktualnie działające procesy w skladni BSD.
+
+Zadanie 2
+
+1.Uruchomiłem notatnik
+2.Ma PID 15788
+3.W moim przypadku kill nie zabilo procesu dopiro sigkill go zabiło.
+4."Operacja niedozwolona"
+5.Nie w każdym przypadku.
+
+Zadanie 3
+
+1.1 Po wpisaniu cat bez parametrów nic się nie dzieje, tylko terminal się blokuje.
+1.2 ctrl + c odblokowało terminal
+
+2.1 Po wpisaniu polecenia cat > wynik1.txt oraz wpisaniu witaj w terminalu i wciśnięciu 
+ctrl + c w pliku nic sie nie znajdzie, ponieważ ctrl + c zabiło ten proces przed zapisaniem.
+
+3.1  Po wpisaniu polecenia cat > wynik2.txt oraz wpisaniu witaj w terminalu i wciśnięciu 
+ctrl + d w pliku znajduje sie zapisany tekst ponieważ ctrl + d zabija proces, dopiero po skończeniu jego pracy.
+

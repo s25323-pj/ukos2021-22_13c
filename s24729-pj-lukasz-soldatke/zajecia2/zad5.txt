@@ -1,0 +1,34 @@
+Zadanie 5)
+
+W moim przypadku, nie było możliwości użycia polecenia man w odniesieniu do polecenia umask, dlatego skorzystałem z polecenia <umask --help>. 
+
+Jeżeli chodzi o sprawdzenie swojej domyślnej maski trybu pliku, skorzystałem z komendy <umask> oraz <umask -S> i uzyskałem:
+	umask: 0002 (w postaci oktalnej)
+	umask -S: u=rwx,g=rwx,o=rx (w postaci symbolicznej)
+
+Przed zmianą maski utworzyłem za pomocą <touch i mkdir> plik i folder z domyślną maską aby zobaczyć później różnicę. Wynik <ls -la> był taki:
+	-rw-rw-r-- domyslny
+	drwxrwxr-x domyslnyfolder
+
+Maskę zmieniłem za pomocą <umask u=r,g=w,o=x>.
+Otrzymałem wynik <umask>:
+	umask: 0356
+	umask -S: u=r,g=w,o=x
+Z nową maską wyniki ls -la były takie:
+	-r---w---- nowy
+	dr---w---x nowyfolder
+
+Druga zmiana za pomocą <umask u=x,g=w,o=r>
+Wynik <umask>:
+	umask: 0653
+	umask -S: u=x,g=w,o=r
+Wynik <ls -la>:
+	-----w-r-- nowy2
+	d--x-w-r-- nowyfolder2
+
+Wniosek:
+	Dla katalogów ustalona maska jest stosowana bezpośrednio, natomiast dla plików ignorowane jest prawo do wykonania jeżeli takie zostało
+	podane, a dzieje się tak najprawdopodobniej ze względów bezpieczeństwa, aby każdy nowo utworzony plik nie został przez przypadek 
+	uruchomiony w przypadku gdyby był to jakiś program/skrypt.
+
+Jeżeli chodzi o operację logiczną umask-a to jest to negacja.

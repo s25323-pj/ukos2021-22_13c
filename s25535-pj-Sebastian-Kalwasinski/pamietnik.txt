@@ -59,7 +59,7 @@ szczenięcego szczęścia z zaciskiem szczęki dwóch ton.
 potem UKOS, a jak starczy czasu to matemetyka. Narazie jestem na 
 etapie UKOSU o czym świadczy żalenie się pamiętnikowi jakie to 
 życie jest ciężkie i niesprawiedliwe, 'wink wink'.
-Wiedza o przyznawaniu praw dostępu się przyda. Po co ktoś ma mi grzebać tam
+Wiedza o przyznawaniu uprawnień się przyda. Po co ktoś ma mi grzebać tam
 gdzie nie ma grzebać. Z ciekawości sprawdzałem co inni losowo
 wybrani studenci mają na szuflandi i na jednym jest katalog
 "nagie_chomiki". Szkoda że w vimie nie mogłem ich narysować
@@ -85,7 +85,7 @@ wena twórcza najdzie.
 
  Pan prowadzący UKOS był bardzo miły wskazać mi literówkę w mojej
 stronie internetowej. Naraszcie działa, JeJ! Jestem z siebie taki dumny.
-Z Pana też że ma lepszy wzrok niż ja. Jeszcze się zazdrosny zrobię.
+Z Pana też, że ma lepszy wzrok niż ja. Jeszcze się zazdrosny zrobię.
 
  Nareszcie uporządkowałem zadania aż do następnego zjazdu. Znając życie i tak
 będzie coś do poprawy i wyjaśnienia szczególnie że zadanie nr.5 pozbawiło mnie
@@ -98,7 +98,7 @@ być perfekcjonistą bo zwarjuje próbując sprawić by wszytko odrazu było ide
  Dostaliśmy małe "mrug, mrug" jednym okiem od pana prowadzącego by przyglądać
 się zadaniom jakie będą na następnych zajęciach i ewentulanie zgłośić swoje
 wątpliwości do wybranych. Nie spodziewałem się że mnie ambicja poniesie i 
-sam się zabiorę za wszystkie po kolei. Przynajmniej mogę się odrazu zapytać się
+sam się zabiorę za wszystkie po kolei. Przynajmniej mogę odrazu zapytać się
 o te które smiały mi się w twarz obserwując jak się męczę.
 "Mrug, mrug" do prowadzącego (zadania do omówienia w poszczególnych plikach).
 Z radością dowiem się jak to miało być, a wszyło jak zawsze.
@@ -108,6 +108,32 @@ albo pójdę na spacer i będę musiał ją szybko zapisać bo zapomnę. Często
 
 s25535 Tutaj był.
 
+================================================================================
+21 Listopada 2021
+
+Dzisiaj krótko i na temat.
+
+Chyba wreszcie do głowy sobie wbiłem czym się różnią prawa od uprawnień.
+Mamy prawa dostępu:
+
+Prawo dostępu r read       4
+Prawo dostępu w write      2
+Prawo dostępu x execute    1
+
+Plik któremu są przypisane prawa dostępu dajmy: r-x (g=r,g=x) 
+może zostać przeczytany i uruchomiony przez kogoś kto jest uprawniony do tego
+w tym przypadku grupę użytkownika. Czyli grupa użytkownika jest uprawniona,
+do czegoś, dzięki temu że plik ma przypisane prawa dostępu dla grupy.
+Przynajemy komuś uprawnienia do pliku poprzez nadenie temu plikowi praw dostępu. 
+
+Chyba jakoś tak. Moje wnioski na podstawie wszytkiego co miałem dostępne.
+Na ćwiczeniach się nie mogłem o to dopytać , grupa też nie potrafi tego
+w słowach wyrazić tak bym to zrozumiał. Za każdym razem muszę
+poprawiać prawa, a uprawnienia. Może w końcu nie będę musiał. xD
+
+Au revoir und Sayōnara. "I'll be back", s25535
+
+================================================================================
 
 
  

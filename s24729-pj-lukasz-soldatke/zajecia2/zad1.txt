@@ -1,0 +1,57 @@
+Zadanie 1)
+
+Zadania wykonałem na maszynie wirtualnej lubuntu. Utworzyłem konta dwóch użytkowników, tak aby otrzymać takie same efekty jak gdybym robił to 
+na szuflandii.
+
+1. Utworzyłem w katalogu domowym użytkownika pierwszego (user1) przykładową strukturę podkatalogów i plików tekstowych zawierającą - katalog 
+zadaniaL2, a w nim foldery read, write oraz execute a w każdym z nich kolejno pliki: readtxt, writetxt oraz executetxt.
+
+	struktura:
+
+		home
+			user1
+				zadaniaL2
+					read
+						readtxt
+					write
+						writetxt
+					execute
+						executetxt
+
+Jeżeli chodzi o katalogi domowe innych uczestników zajęć na szuflandii, są tam widoczne ich pliki i foldery w które możemy wejść, które możemy 
+zobaczyć, ale których nie możemy modyfikować o ile nie zostaną zmienione przez nich prawa dostępu.
+
+2. Dla katalogów nadałem następujące prawa innym użytkownikom (o):
+	katalog read - jedynie prawo do odczytu, wł. zapoznania się z zawartością katalogu (za pomocą polecenia <chmod o=r read>)
+	katalog write - jedynie prawo do zapisu, wł. zmiany zawartości katalogu (za pomocą polecenia <chmod o=w write>)
+	katalog execute - jedynie prawo do wykonywania, wł. wejścia do katalogu (za pomocą polecenia <chmod o=x execute>)
+
+3. Wyniki tego działania widoczne na koncie drugiego użytkownika (user2) były następujące:
+
+	W przypadku katalogu "read": 
+		- nie można dostać się do katalogu za pomocą polecenia <cd> (brak praw wykonania - x)
+		- nie można wyświetlić zawartości katalogu za pomocą <ls>, zamiast tego można użyć <ls -la> jednak nie otrzymamy pełnej 
+			informacji na temat znajdującej się tam zawartości. Przykładowo atrybuty były w większości ukryte za pomocą znaków "?", 
+			nie można też w związku z tym odczytywać zawartości znajdujących się tam plików. (brak praw wykonania - x)
+		- nie można nadpisywać zawartości (brak praw zapisu - w)
+	W przypadku katalogu "write":
+		- nie można wejść do katalogu (brak praw wykonania - x)
+		- nie można wyświetlić zawartości katalogu za pomocą <ls> ani <ls -la> (brak praw odczytu - r)
+		- nie można też zapisać, usuwać ani modyfikować w nim żadnego pliku dopóki nie nada się mu dodatkowo prawa do wykonania/wejścia 
+			do katalogu (za pomocą polecenia <chmod o+x write>)
+	W przypadku katalogu "execute":
+		- można dostać się do niego za pomocą <cd>
+		- nie można wyświetlić jego zawartości (brak praw odczytu - r)
+		- nie można tworzyć, usuwać czy modyfikować plików (brak praw zapisu - w)
+
+4. Aby utworzyć lub usunąć plik kukulczejajko należy posiadać prawa zapisu/zmiany zawartości katalogu (w) oraz wykonania/wejścia do katalogu (x). 
+Jeżeli posiadamy takie prawa dostępu do folderów znajdujących się w katalogu domowym innych użytkowników można utworzyć w nich i usunąć ten plik, 
+lub jakikolwiek inny, dlatego też należy zadbać o to aby nie nadawać niepotrzebnych praw innym aby np. samemu nie zostać poszkodowanym.
+
+5. 
+	Tryb tekstowy: Użyte przeze mnie komendy widoczne powyżej
+	Midnight Commander: Do zmiany praw katalogów można użyć pozycji "chmod" widocznej po otworzeniu menu file na górnej belce programu. 
+		Otwiera się nam wtedy okienko, w którym możemy sobie wyklikać prawa jakie chcemy dodać a jakie usunąć. Plik możemy utworzyć za 
+		pomocą pozycji "edit" znajdującej się na dole, po czym otworzy nam się edytor nano
+	Graficzny interfejs użytkownika: Należy dostosować odpowiednie prawa do poszczególnych folderów klikając na nie prawym przyciskiem 
+		myszy i przechodząc do właściwości a następnie zakładki praw dostępu

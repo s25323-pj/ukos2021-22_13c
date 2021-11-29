@@ -1,0 +1,42 @@
+Zadanie 1
+
+a) cd ../../../kot/ma/ale bez slasha na początku
+b) cd /tmp/ukos/kot/ma/ale slash na początku
+
+Zadanie 2
+
+mkdir -p a/b/c
+
+Zadanie 3
+
+a) mv /tmp/ukos/kot/ma/ale /tmp/ukos/ala/i/
+b) mv ../../../kot/ma/ale ../../i/ 
+
+Zadanie 4
+
+kill numer pid
+
+Zadanie 5
+
+ls | grep -e '^al'
+
+Zadanie 6
+
+a)chmod 007
+b)chmod 040
+c)chmod 700
+
+Zadanie 7
+ls -p|grep -v/ >plik
+
+Zadanie 8
+Złe uprawnienia 
+Brak miejsca na dysku
+
+Zadanie 9
+
+tab
+
+Zadanie 10
+
+ctrl + z i bg 

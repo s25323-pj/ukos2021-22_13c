@@ -1,0 +1,8 @@
+Zadanie 3)
+
+1. Po użyciu komendy <cat> ukazało się puste pole, w którym można było wpisywać dowolny tekst.
+2. Po użyciu ^C pole zniknęło umożliwiając ponownie wprowadzanie poleceń.
+1-4. Po użyciu <cat > wynik1.txt>, wpisaniu "witaj" bez wciskania enter oraz po wciśnięciu ^C, w pliku nie znalazło się nic.
+1-4. Po użyciu <cat > wynik2.txt>, wpisaniu "witaj" bez wciskania enter oraz wciśnięciu ^D (dwukrotnie), w pliku znalazła się wpisana wcześniej 
+	treść "witaj". Stało się tak, dlatego że skrót klawiszowy ^C kończy działanie programu natychmiastowo, natomiast ^D pozwala programowi 
+	zakończyć się zamykając strumień wejściowy.

@@ -1,0 +1,15 @@
+Zadanie 1)
+
+1. Polecenie <ps> wyświetliło informacje o dwóch działających procesach.
+2. <ps -a> miało wynik podobny do poprzedniego, z tym że widoczny poprzednio proces bash nie został wyświetlony. (wg. man-a: Nie wyświetla 
+	procesów powiązanych z terminalem)
+3. W wyniku użycia polecenia <ps x> ukazało się dużo więcej wyników. Wyświetlone zostały również procesy niemające przypisanego terminala (ze 
+	znakiem "?" w kolumnie TTY).
+4. W wyniku użycia <ps aux> ukazało się jeszcze więcej wyników, a sam widok był jeszcze bardziej szczegółowy. (m.in. widoczny użytkownik danego 
+	procesu, zużycie procentowe procesora czy pamięci) Jest to połączenie trzech argumentów (a - wyświetlenie procesów posiadających 
+	terminal, u - format zorientowany na użytkownika, wyświetlenie użytkownika, x - format rejestrowy, w połączeniu z parametrem a oznacza 
+	wyświetlenie procesów zawierających przypisany terminal jak i tych bez niego)
+- Kolumna nr. 2 w poleceniu <ps x> oznacza numer terminala, w którym działa dany proces. Natomiast znak zapytania w tym miejscu oznacza
+	brak terminala, do którego przypisany jest dany proces.
+1. Procesy bash wyświetliłem przy pomocy polecenia <ps aux | grep bash>.
+2. Procesy należące do użytkownika root wyświetliłem za pomocą <ps -u root>. (<ps -u> wyświetla procesy należące do danego użytkownika)

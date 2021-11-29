@@ -1,0 +1,15 @@
+Komendy uzyte do zadan:
+
+2.) ls - wyswietli zawartosc katalogu
+3.) pwd - pokaze aktualna sciezke dostepu (u mnie /home/ubuntu)
+4.) cd Desktop
+5.) /home/ubuntu/Desktop
+6.) ls
+7.) Tak, otrzymamy to samo
+8.) ls ~ - wyswietli zawartosc katalogu domowego
+9.) cd ../Pictures
+10.) pwd (/home/ubuntu/Pictures)
+11.) pozostane w tym samym katalogu
+12.) cd /home/ubuntu
+13.) bash: cd: /root: Permission denied
+14.) Przelaczylo mnie do konsoli nr 0

@@ -1,0 +1,15 @@
+Zadanie 2)
+
+W katalogu zadaniaL2 utworzyłem następujące foldery i odebrałem wszystkie prawa folderowi podrzędnemu a następnie nadrzędnemu:
+
+	struktura:
+		
+		zadaniaL2
+			zad2
+				nadrzedny
+					podrzedny
+
+Polecenia <cd> jak i <chmod> na danym katalogu możemy wykonać wtedy jeżeli posiadamy odpowiednie prawa nie tylko do niego samego ale też do 
+katalogu nadrzędnego. Po pozostawieniu domyślnych praw dla folderu podrzędny i usunięciu wszystkich praw dla folderu nadrzędny nie byłem w 
+stanie dostać się do folderu podrzędny ani zmodyfikować jego praw dostępu. Z kolei kiedy folder nadrzędny miał domyślne prawa dostępu a 
+podrzedny odjęte wszystkie nie byłem w stanie dostać się do podrzednego ale mogłem zmienić jego prawa.

@@ -1,0 +1,3 @@
+Zadanie 5)
+
+Używając: ls | grep al*

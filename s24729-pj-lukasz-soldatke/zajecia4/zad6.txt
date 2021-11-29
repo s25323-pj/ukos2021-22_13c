@@ -1,0 +1,13 @@
+Zadanie 6)
+
+właściciel (u): rwx/7(4+2+1)
+grupa (g): r-x/5(4+1)
+inni (o): --x/1
+
+Notacja ósemkowa:
+chmod 751 ala
+
+Notacja symboliczna:
+1. chmod a=x ,potem
+2. chmod g+r ,potem
+3. chmod u+rw

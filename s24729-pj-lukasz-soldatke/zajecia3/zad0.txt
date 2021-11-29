@@ -1,0 +1,11 @@
+Zadanie 0)
+
+- Po użyciu komendy <ls -a> wyświetlonych zostało około 30 pozycji. Wyświetliła ona wszystkie pliki i foldery znajdujące się w katalogu domowym
+	użytkownika.
+- Po użyciu komendy <ls -a | grep D> widoczne były 3 pozycje zawierające "D" (katalogi: Desktop, Documents oraz Downloads).
+- Wynikiem polecenia <ls -a | grep D > ListaPlikówZLiterkąD.txt> było zapisanie zawartości która ukazała się w wyniku wykonania 
+	poprzedniej komendy (<ls -a | grep D>) do nowo utworzonego pliku o nazwie ListaPlikówZLiterkąD.txt, oraz nazwy samego pliku do którego 
+	wyniki zostały przekazane.
+- "|" służy do połączenia działania wielu poleceń. Tak jak w poprzednich przykładach, posłużył on do połączenia wyników działań <ls -a> 
+	(listowanie zawartości) oraz <grep D> (wyszukiwanie określonych wierszy). Z kolei ">" jest operatorem przekierowania i służy do 
+	przekazania wyników działania danego polecenia lub połączonych poleceń np. do pliku.

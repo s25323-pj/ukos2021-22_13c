@@ -1,0 +1,4 @@
+Zadanie 4)
+
+Należy sprawdzić numer PID tego programu (korzystając z komendy  ps (np. z parametrem aux)) a następnie użyć polecenia: kill -9 [numer PID]
+-9 - Parametr dla komendy kill oznaczający wymuszone przerwanie programu. Nie może zostać przechwycony.

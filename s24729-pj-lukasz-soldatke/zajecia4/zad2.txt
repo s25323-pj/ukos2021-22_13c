@@ -1,0 +1,4 @@
+Zadanie 2)
+
+Za pomocą: mkdir -p "../../../kot/ma/ale/jan/kowalski" lub mkdir -p "/tmp/ukos/kot/ma/ale/jan/kowalski"
+-p (parent) - parametr umożliwiający utworzenie katalogów nadrzędnych, jeżeli są potrzebne

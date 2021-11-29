@@ -1,0 +1,5 @@
+Zadanie 9)
+
+Można użyć klawisza tab aby uzupełnić treść wpisywanej komendy, co jest pomocne np. kiedy nie pamiętamy pełnej nazwy jakiegoś pliku czy folderu 
+jeżeli jest tyko jedna możliwość uzupełnienia danego polecenia. Jeżeli takich możliwości jest więcej, należy wpisać dodatkowy ciąg znaków, 
+który pozwoli na jednoznacze określenie dokończenia polecenia i wtedy wcisnąć tab.

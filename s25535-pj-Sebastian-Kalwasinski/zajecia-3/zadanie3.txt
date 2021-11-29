@@ -24,8 +24,9 @@ Wykonanie zadań nr.3
   stosuję kombinację klawiszy Ctrl+D, dwa razy bo jeden raz nie łapie.
 
 . Tym razem w moim pliku wynik2.txt znajduje się wpisany przeze mnie tekst.
-  To dlatego że kombinacja klawiszy Ctrl+D zabija pierwszoplanowy proces,
-  ale przed jego zatrzymaniem grzecznie czeka aż ten skończy robić to co robi.
+  To dlatego że kombinacja klawiszy Ctrl+D zamyka strumień wejściowy (input),
+  zamykając w ten sposób proces bez nagłego przerwania jego pracy, czyli
+  umożliwia mu poprawne zakończenie działania.
 
 
   

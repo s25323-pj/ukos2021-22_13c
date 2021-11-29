@@ -1,0 +1,18 @@
+Zadanie 2.
+1.Stworzyłem folder test za pomocą polecenia mkdir test
+2.Po stworzeniu pliku użyłem polecenia cd test by wejść do tego folderu
+3.Gdy znalazłem się już w folderze wpisałem komende umask dzięki czemu dowiedziałem się jakie prawa dostepu otrzymał mój folder z-ósemkowego 0022
+4.Stworzyłem plik1 za pomocą polecenia touch plik1 i sprawdziłem jakie ma uprawnienia -rw-r--r-- 
+5.zmieniłem maskę na 000 (umask 000)
+6.I stworzyłem nowy plik lecz tym razem plik otrzymał takie prawa -rw-rw-rw-
+7.zmieniłem maskę na 555
+8.Kolejny pliczek juz otrzymał takie prawa --w--w--w-
+9.Z maską 777 otrzymuje ----------
+Podsumowując to czego dowiedziałęm się dzięki temu zadaniu oraz informacji w internecie:
+Standardowo uprawnienia dla tworzonego pliku są rw-rw-rw- (ósemkowo 666)
+a do folderów rwxrwxrwx (ósemkowo 777) jeśli maska jest wyłączona.
+Podczas tworzenia pliku dostaje się inne uprawnienia, a mianowicie rw-r--r-- (z domyślną moją maską 022).
+Przyznawane uprawnienia przechodzą bramka AND z zanegowaną wartością maski.
+Jeśli nasza maska równa się 022 to po rozłożeniu jej i zapisaniu binarnie będzie się równać 000 010 010, a po negacji 111 101 101, dlatego też ostateczne prawo dostępu do pliku, które otrzymamy będzie rw-r--r--.
+Dlatego w podpunkcie 9* z maską 777 odebrało mi wszystkie prawa.
+

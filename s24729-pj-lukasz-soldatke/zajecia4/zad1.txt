@@ -1,0 +1,4 @@
+Zadanie 1)
+
+- Względna - za pomocą polecenia: cd ../../../kot/ma/ale
+- Bezwzględna - za pomocą polecenia: cd /tmp/ukos/kot/ma/ale

@@ -1,0 +1,4 @@
+2021.10.21
+Na ostatnich zajeciach nauczylem sie podstawowej obslugi github'a oraz linuxa.
+2021.11.05  
+Na poprzednich zajęciach nauczyłem się jak wygenerować token na githubie oraz klucz SSH. Poznałem również podstawy modyfiakcji dostępu do folderów w moim katalogu.

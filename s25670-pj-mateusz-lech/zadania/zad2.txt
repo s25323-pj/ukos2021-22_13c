@@ -1,0 +1,11 @@
+Komendy uzyte do zadania:
+1.) cd ~
+2.) mkdir -p ukos/katalog/katalog2 ukos/katalog/katalog3 ukos/klamka
+3.) cd ukos/klamka
+4.) touch zajecia2.txt zajecia.log inny.txt nowy.txt
+5.) cd ..
+6.) mkdir -p to/jest/dluga/nazwa
+7.) touch to/jest/dluga/nazwa/dane.txt
+8.) rm klamka/*.txt
+9.) rmdir katalog/katalog2
+10.) rm -rf klamka

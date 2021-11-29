@@ -1,0 +1,3 @@
+Zadanie 3)
+
+Za pomocą: mv "../../../kot/ma/ale" "../../i" lub mv "/tmp/ukos/kot/ma/ale" "/tmp/ukos/ala/i"

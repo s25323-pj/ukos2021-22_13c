@@ -1,0 +1,31 @@
+Zadanie 1
+
+1.Polecenie -r pozwala mi odczytanie zawartości pliku, a ls wypisze zawartość katalogu. Nie mam uprawnień do wejścia do sprawdzanego katalogu. W przypadku pliku mogę sprawdzić jego zawartość wchodząc do niego za pomocą vim-a. 
+2.By utworzyć nowy katalog/plik w innym katalogu potrzebuję praw dostępu w+x
+3.Kukułcze jajo do którego nie mam praw dostępu mogę usunąć jeśli mam prawa do katalogu nadrzędnego
+4.Midnight Commander ruchamiam w terminalu poleceniem mc. Używając kombinacji Alt+t mogę dostosować widok. Mogę na bieżąco zobaczyć jak zmieniają się prawa dostępu do poszczególnych katalogów.
+  
+Zadanie 2
+
+1.Żeby użyć chmod używam ścieżki bezwględnej.
+2.Usuwam wszelkie prawa dostępu do katalogu za pomocą chmod 000
+Komenda ls nie działa, ale cd działa dalej chociaż nie mogę wejść do katalogu podrzędnego, mogę tylko wyjść,  
+3.Usuwam prawa dostępu do nadkatalogu (chmod 000 + ścieżka katalogu). Dalej jestem w podkatalogu i
+mogę tworzyć pliki. Nie mogę cofnąć się do katalogu nadrzędnego przez polecenie cd, ale mogę wyjść omijając katalog nadrzędny.
+4.Nie mogę przeskoczyć do XYZ z ABC.
+
+Zadanie 3
+
+1.echo "tekst" > plik w którym ma być zapisany ten tekst.
+2.Np.  echo "nagie koty" > plik.
+3.Utworzyłem plik który zapisał mój tekst echo czyli :"nagie koty" .
+4.cat plik wyświetli mi co zostało zapisane w pliku "plik".
+5.Zmiana operatora > na operator >> powoduje że polecenie echo "nagie koty" >> plik nie nadpisuje zawartości mojego pliku tylko dopisuje nową linijkę na końcu pliku.
+6.Komenda tail służy do wyświetlania ostatnich wierszy danego pliku.
+7.Mam podgląd w drugim terminalu i dzięki komendzie tail -f plik mogę oglądać na bierząco zmiany w moich nagich kotach, a dzieki komendzie echo mogę nadpisywać, lub dopisywać do moich nagich kotów.
+
+Zadanie 4
+
+1.Za pomoca mkdir public_html stworzyłem katalog public_html, w którym umieściłem plik strona.html z zawartością z zadania.
+2.Potrzebne są prawa do odczytu katalogu public_html, oraz prawa read dla pliku.
+3.Nie mam pojęcia :(

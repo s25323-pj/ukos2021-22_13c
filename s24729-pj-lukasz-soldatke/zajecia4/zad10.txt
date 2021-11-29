@@ -1,0 +1,10 @@
+Zadanie 10)
+
+Aby uruchomić program bez blokowania terminala, należy skorzystać z komendy [nazwa programu] &
+np. gedit &
+Alternatywnie można też uruchomić program poprzez wpisanie jego nazwy, a następnie przeniesienie go do tła tak aby nie blokował terminala. Aby 
+to zrobić należy: 
+1. wpisać nazwę programu - np. gedit
+2. użyć kombinacji klawiszy CTRL+Z, aby chwilowo zatrzymać działanie programu
+3. można sprawdzić jaki numer ma nasz program
+4. użyć bg [numer programu] lub bg [nazwa programu]

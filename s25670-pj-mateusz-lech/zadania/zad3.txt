@@ -1,0 +1,34 @@
+Zadanie 1: 
+1. ps - wyswietli liste  procesow 
+2. ps -a - wswietli liste procesow innych uzytkownikow
+3. ps x - wyswietli lite procesow nie popietych pod terminal
+4. ps aux - wyswietla wszystko co powyzej razem z nazwa uzytkownika 
+
+1.1:
+ps aux | grep bash
+
+1.2:
+ps aux | grep root
+
+Zadanie 2:
+1. wybralem nano
+2. jego PID: 1963
+3. kill -9 1963
+4. killall shell - wyswietlil sie komunikat no process found
+5. kill'em nie mozna zabic porcesu innego uzytkownika
+
+Zadanie 3:
+Ctrl + C:
+plik wynik1.txt jest pusty
+ 
+Ctrl + D:
+plik wynik2.txt zawiera wpisany wyraz 'witaj'
+
+Zadanie 4:
+1. wpisalem nano (gimpa nie ma) i za pomoca Ctrl + Z przenioslem go do tla
+2. po wpisaniu bg wyswietlil sie komunikat o tym ze nano jest w tle
+3. po wpisaniu fg przenioslem nano na pierwszy plan
+
+1. wpisalem nano & i program odrazu przeniusl sie do tla
+2. ja pomoca komendy jobs wyswietlilem programy uruchomione w tle
+3. po wpisaniu fg %1 (nr procesu nano) nano przenioslo nie na pierwszy plan

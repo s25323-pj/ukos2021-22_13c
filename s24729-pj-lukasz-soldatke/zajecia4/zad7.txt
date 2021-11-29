@@ -1,0 +1,8 @@
+Zadanie 7)
+
+Należy użyć: ls -p | grep -v / > [nazwa pliku do którego mają zostać zapisane wyniki]
+gdzie:
+ls -p - wylistowanie zawartości z dodaniem na końcu nazw katalogów znaku "/"
+grep -v / - wyszukanie zawartości z wyłączeniem tej zawierającej znak "/", czyli w praktyce w połączeniu z ls -p - katalogów. Wyszukanie 
+	samych plików.
+> [nazwa pliku do którego mają zostać zapisane wyniki] - przekierowanie/zapisanie wyników do pliku (z nadpisaniem)

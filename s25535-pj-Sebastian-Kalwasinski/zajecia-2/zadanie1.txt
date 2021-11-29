@@ -3,7 +3,7 @@ Wykonanie zadań nr.1
 ====================
 
 ================================================================================
-1.Prawa dostępu.
+1.
   r- Umożliwia mi odczytanie zawartości pliku, lub katalogu. Jeśli jest to 
   katalog to polecenie ls pokaże mi jego zawartość. Nie mam możliwośći wejścia
   do sprawdzanego katalogu. W przypadku pliku jego zawartość mogę wyświetlić za
@@ -106,7 +106,7 @@ Wykonanie zadań nr.1
 
 ================================================================================
 4.Stworzyłem katalog o nazwie public_html i umieściłem  w nim plik z podaną
-  zawartością. Narazie nie zmam się na HTML-u więc zostawię to tak jak jest.
+  zawartością. Narazie nie znam się na HTML-u więc zostawię to tak jak jest.
   Jedynie to mogę powiedzieć że zawartość różni się wyglądem więc spełnia
   trochę inną funkcję niż przechowywanie czystego tekstu.
 

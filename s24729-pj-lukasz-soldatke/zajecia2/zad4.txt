@@ -1,0 +1,6 @@
+Zadanie 4)
+
+Utworzyłem katalog public_html, ponieważ nie było go wcześniej w moim katalogu domowym na szuflandii, następnie utworzyłem w nim plik 
+strona.html o zawartości podanej w poleceniu.
+Aby strona była widoczna, katalog domowy użytkownika i katalog public_html powinny mieć prawa do odczytu i wejścia do katalogu, natomiast sama 
+strona powinna mieć przynajmniej prawo do odczytu.

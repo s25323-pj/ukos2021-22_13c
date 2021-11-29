@@ -6,31 +6,31 @@ Wykonanie zadań nr1.
 1.Ścieżka względna zaczyna się od miejsca w którym się znajdujemy i jest
   od niego zależna. W moim przypadku to będzie tak:
     
-   cd ../../..
-   cd kot/ma/ale
+   cd ../../../kot/ma/ale
+   
 
-  Ścieżka bezwzględna zaczyna się od katalogu domowego i nie ma znaczenia gdzie
-  się teraz znajduję. W moim przypadku to będzie polecenie:
+  Ścieżka bezwzględna zaczyna się od katalogu głównego oznaczonego slashem "/"
+  i to od niego zaczynamy. np: /home /tmp /bin /usr
   
-   cd /home/ubuntu/ukos/kot/ma/ale
+   cd /tmp/ukos/kot/ma/ale
 
 ===============================================================================
-2.Używam ścieżki bezwzględnej w połączeniu z poleceniem mkdir z argumentem -p
+2.Używam obu scieżek w połączeniu z poleceniem mkdir z argumentem -p
   by tworzyło także katalogi rodzica (parent) jeśli wymagane. Coś takiego:
 
-  mkdir -p /home/ubuntu/ukos/kot/ma/ale/jan/kowalski
+  mkdir -p /tmp/ukos/kot/ma/ale/jan/kowalski    Bezwzględna
 
-  Dzięki wykorzystaniu ścieżki bezwzględnej nie muszę się przejmować gdzie
-  obecnie się znajduję, jedynie tym czy mam przydzielone prawa dostępu 
-  do odpowiedniego katalogu czy nie.
+  lub:
+  
+  mkdir -p ../../..kot/ma/ale/jan/kowlaski      Względna
 
 ================================================================================
 3.Do wykonania tego zadania używam polecenia mv (move), które służy do 
   przenoszenia katalogów/plików, lub zmiany ich nazwy.
   W tym przypadku przenosimy katalog "ala" do katalogu "i" Coś takiego:
 
-  mv /home/ubuntu/ukos/kot/ma/ale /home/ubuntu/ukos/ala/i
-  1= =============2============== ===========3===========
+  mv /tmp/ukos/kot/ma/ale   /tmp/ukos/ala/i/    Bezwzględna
+  1= =========2==========   ========3=======
 
 
   Na pierwszy rzut oka nie widać, ale polecenie zawiera trzy, a nie dwa elementy
@@ -38,69 +38,47 @@ Wykonanie zadań nr1.
   ścieżki bezwzględnej, a trzeci to katalog "i" do którego również prowadzi
   ścieżka bezwzględna.
 
+  Lub:
+
+  mv ../../../kot/ma/ale   ../../ala/i         Względna
+ 
 ================================================================================
 4.Czerwonym krzyżykiem w rogu, chyba że ta odpowiedź jest niedozwolona. xD      
 
   Jeśli terminal działa to mogę użyć poleceń:
   
    ps aux | grep "nazwa programu"
-   kill -9 "PID procesu"
   
-  Jeśli program jest na pierwszym planie w terminalu to wrzucić go do tła (bg)
-  i wtedy próbować to samo.
-
+   kill -sigkill PID
+   kill -9 PID
+   -9 PID
+   
   To zadanie wykonuję zakładając że tylko program nie reaguje, a terminal
   działa bez problemów. Drażniło mnie zagadnienie w którym terminal też by
   nie współpracował. W takim razie metodą prób i błędów wymyśliłem rozwiązanie.
   Mógłbym przełączyć się na terminal virtualny kombinacją Ctrl+Alt+F1 i dopiero 
   z tego terminala uśmiercić nieopowiadjący program. Login do tego terminala
-  to "ubuntu" bez hasła. Odgadłem po trzecim razie. Ten terminal działa w
-  zasadzie tak samo jak ten z którego przywykłem korzystać.
+  to "ubuntu" bez hasła. Ten terminal działa w zasadzie tak samo jak ten
+  z którego przywykłem korzystać.
   
 
-================================================================================<---Do omówienia
-5. By to zrobić przekopałem man-a i internet do góry nogami.
-  
-   To są sposoby by znaleźć wszytko co nie jest katalogiem, czyli w zadadzie
-   można przyjąć że jest plikiem.
+================================================================================
+5. Sposób by znaleźć katalogi:
  
-   ls -lap | grep -v /
+   ls -ap | grep -v /
   
-  Polecenie ls z argumentami -lap służy do wylistowania wszytkich plików i 
+  Polecenie ls z argumentem -pa służy do wylistowania plików i 
   katalogów oraz ma dodać slash '/' na końcu jeśli jest to katalog.
   W połączeniu z poleceniem grep z argumentem '-v', który odwraca jego działanie
   (grep znajduje wszytko co nie zawiera podanej frazy) otrzymujemy komendę,
   która wypisuje tylko pliki.
   Dalej możemy dodać nasępny filtr który znajduje wyrazy które zaczynją się od
-  "al"
+  "a1"
+
+  ls -ap | grep -v / | grep '^a1'
+
+  To polecenie umożliwia wyświetlenie plków których nazwa zaczyna się od "a1".
  
-  grep -E '\bal'
-
-  Będzie to wyglądało tak:
-
-  ls -lap | grep -v | grep -E '\bal'
-
-  '\b' w wyrażeniu regularnym oznacza granicę słowa:
-  
-  '\bCZĘŚĆ_WYRAZU'   jeśli to co szukamy ma być na początku wyrazu.
-  'CZĘŚĆ_WYRAZU\b'   jeśli ma być na końcu wyrazu
-
-  Nie wiem tylko jak dokładnie ma działać argument "-E",
-  szczególnie że całe polecenie dobrze działało bez argumentu "-E",
-  a wyjaśnienie man  wcale nie jest dla mnie jasne.
-  " Rozszerzone wyrażenie regularne."  
-
-
-  Jest jeszcze drugi sposób by znaleźć niekatalogi:
-
-  ls -la | grep '^-'
-
-  W tym przypadku grep wyszukuje "-" na początku lini. W przypadku katalogów
-  w miejscu "-" znajduje się "d" (directory).
- 
-  Starałem się przy tym zadaniu jak mogłem i próbowałem różych kombinacji,
-  ale czegoś wciąż mi brakuje i nie wiem czy jest to rozwiązanie, które
-  oczekiwał pan zobaczyć.
   
   
 ================================================================================
@@ -114,8 +92,11 @@ Wykonanie zadań nr1.
 
   Notacja ósemkowa: chmod 741 ala
   
-  Notacja symboliczna: "chmod u=rwx ala", "chmod g=r ala", "chmod o=x ala".     <---Do omówienia
-  Nie ma jednego polecenia na zmianę kilku praw dostępu naraz?
+  Notacja symboliczna: chmod u=rwx,g=r,o=x ala".    
+ 
+  Jeśli chcemy nadać wiele uprawnień za pomocą notacji symbolicznej należy podać
+  wiele argumentów po przecinku bez spacji, a potem nazwę katalogu.
+   
 
 ================================================================================
 7.Plik z listą PLIKÓW w bieżącym katalogu
@@ -126,7 +107,6 @@ Wykonanie zadań nr1.
   By zrobić listę PLIKÓW w pliku w bierzącym katalogu mogę złożyć w całość
   następujące polecenie
 
-  ls -a | grep '^-' >mój_plik   ,lub
   ls -ap | grep -v / >mój_plik
   ==1===  ===2====  3= ===4===
  
@@ -137,8 +117,8 @@ Wykonanie zadań nr1.
   
 ================================================================================
 8.
-  1.Nie mam przydzielonych praw dostępu do katalogu w którym chcę utworzyć plik.<---Do omówienia
-  2.Serwery padły
+  1.Nie mam przydzielonych praw dostępu do katalogu w którym chcę utworzyć plik.
+  2.Serwery padły/Internet mi padł i mnie zaraz wywali.
 
   Trochę mało tych pomysłów mam.
 ================================================================================

@@ -51,3 +51,28 @@ Skorzystałam potem też z komendy killall shell, po której terminal również 
 różnicy pomiędzy tymi dwoma komendami w praktyce.
 
 SIGKILL – unicestwienie procesu co może powodować utratę wszystkich zawartych w nim danych.
+
+3. 
+Test skrótu Ctrl+C
+
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd$ cat
+^C
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd$
+
+
+Test na różnicę działania Ctrl+C, Ctrl+D
+
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd/s25067-pj-Paulina-Debis/Zadania$ cat > wynik.txt
+Hejka ziomek, jak tam dzionek?^C
+ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd/s25067-pj-Paulina-Debis/Zadania$ cat > wynik1.txt
+Siema ziomek, dzisiaj nie jest moj dzionek :( ubuntu@bss-ubu1804:~/Desktop/Zajecia/trzeci-zjazd/s25067-pj-Paulina-Debis/Zadania$
+
+Następnie przy użyciu komendy vim weszłam kolejno na pliki wynik.txt oraz wynik1.txt. W pliku zamkniętym za pomocą Ctrl+C nie zapisało się nic,
+natomiast w pliku zamkniętym Crtl+D znajdował się napisany przeze mnie uprzednio tekst. 
+
+4.
+W tym zadaniu zapoznałam się ze skrotami ctrl+c i ctrl+z na podstawie polecenia sleep oraz komendami fg i bg.
+Ctrl+Z pozwala na zatrzymanie aktualnego procesu i przeniesienie go do tla.
+Ctrl+C wylacza aktywny program w terminalu.
+Komenda gb sluzy do uruchomienia programu w tle.
+fb pozwala na przywrocenie procesu na pierwszy plan
