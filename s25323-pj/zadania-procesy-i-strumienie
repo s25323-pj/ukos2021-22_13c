@@ -1,0 +1,46 @@
+Zadanie 1:
+
+1."ps" wyświetla opis bieżących procesów.
+
+2."ps -a" pozwala na wybór wszystkich procesów.
+
+3."ps x" uruchamia restrykcję w stylu BSD. Ta opcja powoduje wylistowanie wszystkich procesów, których jesteś właścicielem.
+
+4.Opcja informuje "ps", aby wyświetlał procesy wszystkich użytkowników. Tylko procesy niepowiązane z terminalem i procesy liderów grup nie są pokazywane.
+
+Zadanie 2:
+
+1.Wybrałem notatnik
+
+2.Użylem "ps aux", ma PID 16684
+
+3.W moim przypadku "kill" nie zabilo procesu dopiro sigkill go zabiło.
+
+4.Po wpisaniu "killall shell" wyświetlił się komunikat "no process found".
+
+5.Polecenie "kill" nie jest dozwolone do użycia na procesach innych użytkowników.
+
+Zadanie 3:
+
+1.Po wpisaniu cat bez parametrów blokuje się terminal.
+2.ctrl + c odblokowało terminal
+
+3.Po wpisaniu polecenia "cat > wynik1.txt" oraz wpisaniu "witaj" w terminalu i wciśnięciu
+"ctrl + c" w pliku nic sie nie znajdzie, ponieważ "ctrl + c" zamknęło ten proces natychmiastowo, nie sprawadzając czy proces skończył robić swoje.
+
+4.Po wpisaniu polecenia "cat > wynik2.txt" oraz wpisaniu "witaj" w terminalu i wciśnięciu 
+"ctrl + d"(2 razy) w pliku znajduje sie zapisany tekst ponieważ "ctrl + d" zamyka strumień wejściowy, zamykając w ten sposób proces bez nagłego przerwania jego pracy.
+
+Zadanie 4:
+1.Po wpisaniu komendy "gimp" włącza się edytor "gimp".
+
+2.Po użyciu "ctrl + z", przenosi to aplikacje do tła i nie da się nic w niej zrobić.
+
+3.Po użyciu "bg", gimp ożył (nie trzeba pytać prowadzącego :P)
+
+4.Polecenie "fg" ponownie umieszcza mój proces na pierwszy plan, a terminal jest zajęty.
+
+5.Po wpisaniu "gimp &", "gedit &", "geany &" otworzyły się te programy w tle, a mój terminal jest zdatny do użytku.
+
+6.Po wpisaniu komendy "jobs" widoczne są 3 procesy wraz z ich numerami. Używam polecenia "fg %2" (2 - numer gedit) aby przywrócić program 
+"gedit" na pierwszy plan.
