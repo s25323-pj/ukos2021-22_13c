@@ -1,0 +1,56 @@
+1:
+# cd ../../../kot/ma/ale
+# cd /tmp/ukos/kot/ma/ale
+
+2:
+# mkdir -p /tmp/ukos/kot/ma/ale/jan/kowalski
+
+3:
+# mv /tmp/ukos/kot/ma/ale /tmp/ukos/ala/i/
+# mv ../../../kot/ma/ale ../../i/
+
+4:
+# kill -SIGKILL PID
+
+5:
+(regexr.com, regex101.com, regular-expressions.info )
+# ls | grep -e '^al'
+# find / -type d -iname "al*" -maxdepth 2 (komenda find i jej przewagi) 
+
+6:
+#chmod o=- /ala ( odbiera dla innych wszystkie prawa)
+#chmod o+x /ala
+#chmod g=- /ala
+#chmod g+w /ala
+#chmod u+rwx /ala
+
+Druga metoda(lepsza)
+#chmod 741
+
+7:
+# touch lista-plikow.txt && ls -p | grep -v / > lista-plikow.txt
+
+8:
+1.(Prawdopodobne)Ktos/Jakis smieszek namieszal w uprawnieniach
+2.(Skrajnie malo prawdopodobne)Serwer jest w trakcie ataku hakerskiego i:
+a) ktos mogl bardzo mocno namieszac w uprawnieniach uzytkownikow do folderow/plikow.
+b) Jakis ransomware ktory obciaza dyski/dysk/procesor(zalezy od skryptu) w 100%/99% przez co nie ma zadnego wolnego bufora/wolnej przestrzeni na polecenie
+ uzytkownika. (bedzie cudem jesli ktokolwiek zdazy sie podlaczyc do serwera)
+3.(Malo prawdopodobne)Padl dysk/ partycja/ kontroler dyskow/macierz raid(Ta opcja zalezy od konstrukcji serwera na ktorym stoi szuflandia, bo mozliwe ze 
+system i pliki sa na jednym dysku/macierzu. Wtedy ta opcja jest nie mozliwe, gdyz zwyczajnie nie bedzie dziala cala szuflania)
+4. Jest jeszcze wiecej opcji ale to juz bedzie ekstremalne gdybanie
+9:
+klikajac tab
+
+10:
+a)
+Odpalamy jakis program np.
+# gimp
+potem:
+# Ctrl+z
+potem:
+# bg
+
+b) gimp &
+
+

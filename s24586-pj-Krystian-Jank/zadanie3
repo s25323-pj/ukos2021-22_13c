@@ -4,7 +4,7 @@ Zadanie 1
 *Po wpisaniu komendy ls |grep D > ListaplikówzliterąD.txt utwrzył się folder pod nazwą ListaplikówzliterąD.txt w którym znajdują się tylko te 3 foldery zaczynajace się z literą D
 *Po wpisaniu komendy ps wyświetliła mi się lista procesów
 *Po wpisaniu komendy ps aux wyświetliła mi się dlugo lista aktualnie działających procesów ale także usera jak długo działa proces ile zajmuję %cpu (taki menedzer zadań windowsowy)
-*Połączenie CTRL+C wysyła sygnał INT do procesu, który domyślnie do przerywa.
+*Połączenie CTRL+C wysyła sygnał INT do procesu, który domyślnie go przerywa.
 *Połączenie CTRL+Z - wstrzymuje proces i zwalnia terminal 
 
 

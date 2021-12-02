@@ -1,27 +1,24 @@
 Zadanie 1.
-a)ścieżka względna (relatywna)-cd ../../kot/ma/ale
-a)ścieżka bezględna (relatywna)-cd tmp/ukos/kot/ma/ale
+a)ścieżka względna-cd ../../kot/ma/ale
+b)ścieżka bezględna-cd tmp/ukos/kot/ma/ale
 
 Zadanie 2.
 mkdir -p jank/kowalski
 
 Zadanie 3.
-a)Bezwglednie mv tmp/ukos/Zadanie/kot/ma/ale tmp/ukos/Zadanie/ala/i
-b)względnie mv ../../../Zadanie/kot/ma/ale ../../i/
+mv /tmp/ukos/kot/ma/ale /tmp/ukos/ala/i/ albo 
+mv ../../../kot/ma/ale ../../i/
 
 Zadanie 4.
 Najpierw uzywamy polecenia ps -aux i zczytujemy nr pid potem za pomocną jednej z tych 3 komend zamykamy program.
--sigkill (nr pid)
--kill (nr pid)
--9 (nr pid)
+kill 9/-SIGKILL/-KILL i nr pid 
 
 Zadanie 5.
 ls |grep al
 
 Zadanie 6
-a)chmod o=x Zadanie lub 1
-b)chmod g=r Zadanie lub 4
-c)chmod u=r+w+x Zadanie
+a)chmod u=rwx,g=r,o=x
+b)chmod 741 Zadanie
 
 Zadanie 7
 ls -p | grep -v/ >plik

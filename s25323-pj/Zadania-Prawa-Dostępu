@@ -1,0 +1,47 @@
+Zadanie 1:
+1.Polecenie -r pozwala na sprawdzenie zawartości pliku, a ls pokaże co znajduje się w katalogu. 
+Nie mam uprawnień do wejścia do sprawdzanego katalogu. W przypadku pliku mogę sprawdzić jego zawartość wchodząc do niego za pomocą vim-a. 
+
+2.By utworzyć nowy katalog lub plik w innym katalogu potrzebuję praw dostępu w+x.
+
+3."Kukułcze jajo" do którego nie mam praw dostępu mogę usunąć jeśli mam prawa do katalogu nadrzędnego.
+
+4.Midnight Commander urchamiam w terminalu poleceniem "mc". Używając "Alt+t" mogę wybrać widok. 
+Na bierząco mogę obserwować jak zmieniają się prawa dostępu do poszczególnych katalogów.
+
+
+Zadanie 2:
+1.Do użycia chmod używam ścieżki bezwględnej.
+
+2.Usuwam wszelkie prawa dostępu do katalogu za pomocą "chmod 000".
+Komenda ls wtedy nie działa, ale cd już tak, chociaż nie mogę wejść do katalogu podrzędnego, mogę tylko sie cofnąć. 
+
+3.Usuwam prawa dostępu do nadkatalogu za pomocą "chmod 000 + ścieżka katalogu". 
+Wciąż jestem w podkatalogu i mogę tworzyć pliki. Nie mogę cofnąć się do katalogu nadrzędnego przez polecenie cd, ale mogę wyjść omijając katalog nadrzędny.
+
+4.Nie mogę przejść do XYZ z ABC.
+
+
+Zadanie 3:
+1.echo "tekst" > plik w którym ma być zapisany.
+
+2.Np.  echo "wiadro" > plik.
+
+3.Utworzyłem plik który zapisał tekst echo czyli :"wiadro" .
+
+4."cat" plik wyświetli mi co zostało zapisane w pliku "plik".
+
+5.Zmiana operatora > na operator >> powoduje że polecenie echo "wiadro" >> plik nie nadpisuje zawartości mojego pliku tylko dopisuje nową linijkę na końcu pliku.
+
+6.Polecenie "tail" służy do wyświetlania ostatnich wierszy (lub, bajtów) danego pliku.
+
+7.W drugim terminalu mam podgląd i dzięki komendzie "tail -f plik" mogę oglądać na bierząco zmiany w moim "wiadro", a dzieki komendzie echo mogę nadpisywać
+lub dopisywać do mojego "wiadro".
+
+
+Zadanie 4:
+1.Za pomoca "mkdir public_html" utowrzyłem katalog "public_html", w którym umieściłem plik "strona.html" z podanymi wytycznymi w zadaniu.
+
+2.Potrzebne są prawa do odczytu katalogu "public_html" oraz prawa read dla pliku.
+
+3.Nie wiem 

@@ -49,9 +49,9 @@ Wykonanie zadań nr1.
   
    ps aux | grep "nazwa programu"
   
-   kill -sigkill PID
+   kill -SIGKILL PID
+   kill -KILL PID
    kill -9 PID
-   -9 PID
    
   To zadanie wykonuję zakładając że tylko program nie reaguje, a terminal
   działa bez problemów. Drażniło mnie zagadnienie w którym terminal też by
@@ -117,10 +117,10 @@ Wykonanie zadań nr1.
   
 ================================================================================
 8.
-  1.Nie mam przydzielonych praw dostępu do katalogu w którym chcę utworzyć plik.
+  1.Nie mam przydzielonych uprawnien do katalogu w którym chcę utworzyć plik.
   2.Serwery padły/Internet mi padł i mnie zaraz wywali.
+  3.Przydzielone mi miejsce na dysku uczenianym się skończyło
 
-  Trochę mało tych pomysłów mam.
 ================================================================================
 9.TAB-ulator. Oczywiście trzeba podać początek by miał co uzupełniać.
 ================================================================================

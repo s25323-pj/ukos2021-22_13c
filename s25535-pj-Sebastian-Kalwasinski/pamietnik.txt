@@ -103,35 +103,49 @@ o te które smiały mi się w twarz obserwując jak się męczę.
 "Mrug, mrug" do prowadzącego (zadania do omówienia w poszczególnych plikach).
 Z radością dowiem się jak to miało być, a wszyło jak zawsze.
 
- Chyba że mnie nagle odpowiedź napadnie jak będę brał prysznic,
-albo pójdę na spacer i będę musiał ją szybko zapisać bo zapomnę. Często tak mam.
+ Chyba że mnie nagle odpowiedź napadnie jak będę brał prysznic
+i będę musiał ją szybko zapisać bo zapomnę. Często tak mam.
 
 s25535 Tutaj był.
 
 ================================================================================
-21 Listopada 2021
+29 Listopada 2021
 
-Dzisiaj krótko i na temat.
+Drogi pamiętniczku. 
 
-Chyba wreszcie do głowy sobie wbiłem czym się różnią prawa od uprawnień.
-Mamy prawa dostępu:
+Jest po trzeciej w nocy, a ja dalej robię z siebie idiotę bo nie mogę poukładać
+sobie w głowie czym się róznią prawa a uprawnienia. Raczej nikt z grupy
+mi nie pomoże bo już raz nie potrafili xd. Zatem kierowany frustracją i strachem
+że Pan prowadzący zajęcia też ma już dość doszedłem do wniosku że najlepiej
+zrobić kopiuj-wklej z zajęć nr. 2. Jak tak teraz nad tym pomyślę to po kiego
+grzyba nas tak męczyłem.
 
-Prawo dostępu r read       4
-Prawo dostępu w write      2
-Prawo dostępu x execute    1
+ r - prawo do odczytu
+ w - prawo do zapisu
+ x - prawo do wykonania
 
-Plik któremu są przypisane prawa dostępu dajmy: r-x (g=r,g=x) 
-może zostać przeczytany i uruchomiony przez kogoś kto jest uprawniony do tego
-w tym przypadku grupę użytkownika. Czyli grupa użytkownika jest uprawniona,
-do czegoś, dzięki temu że plik ma przypisane prawa dostępu dla grupy.
-Przynajemy komuś uprawnienia do pliku poprzez nadenie temu plikowi praw dostępu. 
+rwxr-x--- opis praw dostępu do poszczególnych plików
 
-Chyba jakoś tak. Moje wnioski na podstawie wszytkiego co miałem dostępne.
-Na ćwiczeniach się nie mogłem o to dopytać , grupa też nie potrafi tego
-w słowach wyrazić tak bym to zrozumiał. Za każdym razem muszę
-poprawiać prawa, a uprawnienia. Może w końcu nie będę musiał. xD
+Co ciekawe ani razu nie pada tam słowo uprawnienia.
 
-Au revoir und Sayōnara. "I'll be back", s25535
+Cały problem może wynikać z tego,
+że nie do końca rozumiem wyjaśnienia man-a na temat chmod.
+
+"format trybu symbolicznego to [ugoa...][[-+=][uprawnienie...]...], gdzie
+ uprawnienie jest albo zerem lub większą liczbą liter z zestawu rwxXst, albo
+ pojedynczą literą  z zestawu ugo. Można podać wiele operacji symbolicznych,
+ oddzielonych przecinkami."
+ 
+ zestaw liter:   chmod g=rwx  plik
+ zero:           chmod 0      plik
+ litera z ugoa   chmod g=u    plik
+
+Proszę o pomoc:
+
+Zgodnie z definicją man-a "zestaw liter rwx", "0", oraz "u" są uprawnieniami.
+Wniosek nasuwa się taki że pojedyńcza litera to prawo,
+a większa liczba liter to już uprawnienie. Nie wiem czy jestem w stanie 
+jeszcze coś samodzielnie wyciągnąć.
 
 ================================================================================
 
