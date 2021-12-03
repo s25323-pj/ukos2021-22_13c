@@ -2,7 +2,7 @@ Zadanie 1:
 1.Polecenie -r pozwala na sprawdzenie zawartości pliku, a ls pokaże co znajduje się w katalogu. 
 Nie mam uprawnień do wejścia do sprawdzanego katalogu. W przypadku pliku mogę sprawdzić jego zawartość wchodząc do niego za pomocą vim-a. 
 
-2.By utworzyć nowy katalog lub plik w innym katalogu potrzebuję praw dostępu w+x.
+2.By utworzyć nowy katalog lub plik w innym katalogu potrzebuję uprawnień dostępu w+x.
 
 3."Kukułcze jajo" do którego nie mam praw dostępu mogę usunąć jeśli mam prawa do katalogu nadrzędnego.
 
