@@ -1,0 +1,38 @@
+zad1
+
+ps a - lista procwsów wszystkich użytkowników poza mną 
+ps u - lista moich procesów
+ps aux - wszystkie procesy w systemie
+ 
+
+ps axu | grep bash
+ps axu | grep root 
+
+Zad 2
+
+1. Uruchamiam edytor z menu
+
+2. Wyszukuję jego PID za pomocą polecenia ps aux | grep (nazwa pliku tekstowego) 
+   Edytor działa pod PID 15154
+   
+3. kill 15154
+   Kill wylaczyl program
+  
+   killall (nazwa procesu) - zabija wszystkie procesy o podanej nazwie
+   killall -sigkil (nazwa procesu) - mocniejsza komenda zakończenia procesów
+   
+4. killall shell 
+   shell: no process found
+   
+5. Komenda kill nie zadziała do każdego procesu.
+
+zad 3
+
+1. cat > wynik1.txt 
+   witaj
+   Witaj nie zostało zapisane w pliku wynik1.txt po wciśnięciu ctrl+c, ponieważ ctrl+c zabija proces a bez wcisniecia "enter" nic sie nie zdazylo zapisac.
+
+2. cat > wynik2.txt
+   witaj
+   ctrl+d zapisuje i zamyka proces, więc "witaj" zostało zapisane w pliku teksotwym
+   

@@ -1,0 +1,25 @@
+1. 
+
+Widoczne dla mnie foldery i pliki mają uprawnienia g=rx,o=x, więc nie posiadam uprawnień do tworzenia i usuwania plików/katalogów.
+
+2. 
+
+komendą "cd" nie dostaniemy się do katalogów do których nie mamy uprawnień wejścia.  
+
+chmod możemy używać tak długo jak jesteśmy właścicielem. 
+
+Nie możemy tak przeskoczyć, bo nie mamy uprawnień do katalogu nadrzędnego.
+
+
+3. 
+
+> nadpisuje treść
+
+>> dopisuje treść 
+
+tail -f (plik) pokazuje od razu treść zmienionego pliku 
+
+4.
+
+Minimalne prawa to  chmod 111 public_html i tak samo dla strona.html
+(note: dopiero po zalogowaniu na szuflandie przez putty strona sie wyswietla, inaczej wywala 404)

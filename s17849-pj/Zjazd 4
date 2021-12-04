@@ -1,0 +1,50 @@
+1. 
+względna: cd ../../../kot/ma/ale
+bezwzględna: cd /tmp/ukos/kot/ma/ale
+
+2.
+
+mkdir -p jan/kowalski
+
+3.
+
+mv /tmp/ukos/kot/ma/ale tmp/ukos/ala/i
+mv ../../../kot/ma/ale ../../i
+
+4.
+
+kill -SIGKILL (PID lub nazwa programu)
+
+5.
+
+ls | grep al*
+
+6. 
+
+chmod 741 ala/
+7(owner) read+write+execute
+4(group) read
+1(others) execute
+
+&
+
+chmod u=rwx,g=r,o=x ala/
+
+
+7.
+ls -p | grep -v / > listaplikowwtymkatalogu.txt
+
+8.
+
+- Ktoś namieszał w permisjach i odebrał mi prawa.
+- Przydzielone dla mnie miejsce jest w pełni zajęte
+
+9. 
+
+TAB
+
+10. 
+
+- Z interfejsu graficznego
+- (nazwa programu) &. np: nano &
+- pogram > ctrl+z > bg 

@@ -7,7 +7,7 @@ mkdir -p jank/kowalski
 
 Zadanie 3.
 mv /tmp/ukos/kot/ma/ale /tmp/ukos/ala/i/ albo 
-mv ../../../kot/ma/ale ../../i/
+mv ../../kot/ma/ale ../../i/
 
 Zadanie 4.
 Najpierw uzywamy polecenia ps -aux i zczytujemy nr pid potem za pomocną jednej z tych 3 komend zamykamy program.

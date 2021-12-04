@@ -32,7 +32,7 @@ pwd
 /home/ubuntu/Pictures
 
 11.
-Nic, zostanę w tym samym(bo . odwoluje sie do bieżącego katalogu)
+Nic, zostanę w tym samym(bo . odwoluje sie do bieżący katalogu)
 
 12.
 cd /home/ubuntu/
@@ -43,3 +43,4 @@ Permission denied
 14.
 Przełączenie do konsoli
 - Ctrl-Alt-F7 aby powrócić do trybu graficznego
+
