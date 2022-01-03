@@ -1,0 +1,37 @@
+Zadanie 1.
+Sciezka wzgledna - cd ../../../kot/ma/ale
+Sciezka bezwzgledna - cd /tmp/ukos/kot/ma/ale
+
+Zadanie 2.
+mkdir -p ../../../kot/ma/ale/jan/kowalski
+
+Zadanie 3.
+mv ../../../kot/ma/ale ../../i/
+
+Zadanie 4.
+kill -sigkill <program>
+
+zadanie 5. 
+ls -a | grep -e '^al'
+
+zadanie 6.
+Symboliczne:
+chmod o=x, g=r, u=rwx ala
+
+osemkowa
+chmod 741
+
+zadanie 7.
+ls -p | grep -v / > plik
+
+zadanie 9.
+Klaiwsz TAB uzupelnia komende, lub pokazuje mozliwe opcje. 
+Np.
+mkd + Tab - pokaze nam dwie sugestie, tj. mkdir oraz mkdosfs.
+mkdi + Tab - dopelni nam komende mkdir, poniewaz nie ma innej komendy 
+zaczynajacej sie na 'mkdi'
+
+zadanie 10.
+1. Trzeba uzyc '&' po wpisaniu nazwy programu do uruchomienia
+2. W przypadku uruchomionego procesu, uzyc ctrl+z, aby go wstrzymac, a
+ nastepnie wpisac komende 'bg', aby uruchomic go w tle.

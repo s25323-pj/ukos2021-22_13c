@@ -21,3 +21,9 @@ W dniu 2021.11.06 nauczyłam się:
 - komend - ps, bg, fg, jobs;
 - do czego służy znak "&" na końcu wiersza; 
 
+2021.12.03
+
+W dniu 2021.11.20 nauczyłam się:
+- więcej możliwości komendy grep;
+- powtórzyłam materiał z poprzednich zajęć;
+

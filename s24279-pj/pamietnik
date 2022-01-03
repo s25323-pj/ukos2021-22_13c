@@ -1,3 +1,67 @@
+2021-11-25
+Drogi pamietniku,
+ostatnie zajecia byly powtorka przed zblizajacym sie kolokwium. Mielismy
+okazje przejrzec i powtorzyc caly material w ramach krotkich zadan.
+Sama powtorka byla bardzo pomocna, moglismy utrwalic sobie niektore rzeczy,
+plus dopytac o niejasnosci. Poza samym materialem powtorkowych, prowadzacy
+zaznajomil nas rowniez z tzw.'regular expressions', w skrocie 'regex'. 
+Jest to bardzo przydatna funkcja w Linuxie, pozwalajaca filtrowac pliki/foldery
+wedlug kryteriow, ktore sami mozemy nadac.
+Takimi podstawowymi regex'ami sa:
+^a - pokazuje pliki zaczynajace sie od 'a'
+$a - pokazuje pliki konczace sie na 'a'
+| - oznacza lub/albo
+[] - nawias kwadratowy pozwala zawrzec kilka literek do wyszukania. Dodajac '-'
+miedzy nimi, mozemy stworzyc zakres, np. [a-c], wyswietla wszystko co ma a,b,c.
+[^a] - wyszukuje wszystko, OPROCZ 'a'
+? - dodajac znac zapytania po danej literce, pozwala na zignorowanie jej jesli
+bedzie taka potrzeba. Nie bedac pewnym nazwy pliku, ktorego szukamy. 
+Przykladowo, kryterium 'ko?t', bedzie pasowac do pliku o nazwie 'kot' i 'kt'
+
+Przydatnym 'trickiem' o ktorym sie dowiedzilismy to ponizsza komenda:
+ls -p - dodaje na koncu folderu slash '/'. Dzieki temu mozna wylaczyc z
+wyszukania wszystkie foldery, wykluczajac pliki z slashem na koncu. 
+
+2021-11-15
+Drogi pamietniku,
+
+ostatnim razem na kolejnych zajeciach z UKOS uczylem sie o procesach i strumieniach.
+Mamy trzy rodzaje strumienii w procesach:
+1. Strumien wyjscia - terminal
+2. Strumien wejscia - klawiatura
+3. Strumien wyjscia bledu - tutaj rowniez wyswietla sie on na terminalu
+
+Liste procesow mozna latwo podejrzec za pomoca programu "ps". Ma on rozne dodatkowe funkcje i wariacje, min. 
+mozna wyswietlic wszystkie procesy danego uzytkownika, np. "ps -u <nazwa_uzytkownika>". Poza tym, strumieniami
+mozna manilpulowac i przekierowywac do innych programow. 
+- jesli chcemy przekierowac wyjscie do pliku (opcjonalnie nadpisac dane w pliku), uzywamy  >
+- jesli chcemy przekierowac wyjscie do pliku i je DOPISAC, uzywamy >>
+- analogicznie, tyczy sie to wyjsc bledu, tylko dopisujemy "2" z przodu, czyli mamy: 2> lub 2>>
+-mozna przekierowac rowniez wyjscie z programu A, do wejscia programu B. W tym celu, uzywamy symbolu |, co daje  A|B
+- w druga strone, tez to dziala, wiec mozna dane z pliku B, czytac do programu A. Uzywamy wtedy <, czyli A<B
+
+Kolejna rzecza, ktora sie nauczylem, to program grep. Grep wyszukuje wiersze w plikach i strumieniach, pod wzgledem
+podanego przykladu, np. grep D, poda wszystkie wiersze z litera D. Dodajac do tego powyzsze symbole do manipulacji 
+strumieniami, mozemy na przyklad zapisac wszystkie wiersze z "D" w jakims pliku, lub w innym strumieniu.
+
+Inna przydatna funkcja terminala, ktora poznalem to program "ps". Pozwala ona na wyswietlenie wszystkich aktualnych
+procesow w systemie. Kazdy proces ma swoj indywidualny numer, tzw. PID. Za jego pomoca, mozna wysylac danych procesom
+rozne sygnaly, np. mozna po prostu taki proces zatrzymac, za pomoca komendy "kill", np. kill 1234, "zabija" proces 1234.
+Czasem moze to niezadzialac. Jesli istnieje taka potrzeba, ewentualnie mozna dodac pomiedzy -sigkill. Wtedy wymuszamy
+zamkniecie programu mimo wszystko.
+
+Druga, podobna funkcja jest "jobs". Wyswietla ona programy odpalone w tle. Aby wlaczyc jakis program w tle, wystarczy
+dodac do niego symbol "&", np. sleep 1000 &, w tym momencie program sleep 1000, dziala w tle. Aby go "wyrzucic" na glowny
+ekran, trzbea wpisac komende "fg". Jesli chcemy Aby taki program zatrzymac i wrzucic swporotem do "tylu",mozna uzyc skrotu
+ctrl+z. Taki wstrzymany program w tle, mozna uruchomic za pomoca komendy "bg".
+
+Nawiazujac jeszcze to skrotu ctrl+z, wyrozniami inne dwa przydatne. Ctrl+C i Ctrl+D. Pierwszy wylacza aktualny program, bez 
+zapisywania progresu. Po prostu cofamy sie do momentu, zanim zaczelismy z nim dzialac. Temat zamkniety i zapomniany. Ctrl+D
+za to, rowniez konczy taki program, ale dodatkowo zapisuje go w stanie w jakim aktualnie jest. 
+
+To chyba na tyle, pamietniku. Tym razem zajecia byly obszerne, duzo sie dowiedzialem. 
+Do nastepnego wpisu.
+
 2021-10-31
 Drogi pamietniku,
 za mna kolejne zajecia z UKOS. Nauczylem sie kolejnych rzeczy, zwiazanych z przyznajawaniem praw plikom i folderom. Prawa danego pliku/folderu sa widoczne po wpisaniu funkcji ls -l. Pierwsza literka oznacza typ pliku, a dalszy ciag odzwierciedla typ prawa jakie posiadaja. Grupy posiadajace takie prawa to:

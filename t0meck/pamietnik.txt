@@ -2,3 +2,7 @@
 Na dzisiejszych zajeciach nauczylem/lam sie:
 - ...
 
+2021-12-18
+Na dzisiejszych zajeciach byla powtorka z git-a
+Linijka demonstracyjna 2
+

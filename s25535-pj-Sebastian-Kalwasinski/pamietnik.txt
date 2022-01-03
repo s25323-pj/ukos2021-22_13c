@@ -148,16 +148,41 @@ a większa liczba liter to już uprawnienie. Nie wiem czy jestem w stanie
 jeszcze coś samodzielnie wyciągnąć.
 
 ================================================================================
+4 Grudnia 2021
 
+Drogi pamiętniczku.
 
- 
+ Było kolokwium. Źle nie było, ale mogło być lepiej. Jeśli mam coś obwiniać to
+to że nie słuchałem mojego instynktu przez co straciłem z 4 punkty.
+Nadmierne analizowanie i przekombinowywanie usadziło mnie na niższej ocenie.
 
- 
+ Na kolokwium znajdowały się pojęcia, które zostały wspomniane tylko raz
+na zjazdach. Kojarzenie że coś takiego było, ale niewiedza o co dokładnie w 
+szczegółach chodziło może być zgubne w przyszłości. Trzeba notować, każdą 
+informację niezależnie od tego jak nieistotna mogłaby się wydawać.
+No chyba że to jakieś oczywiste oczywistości które i tak gdzieś tam są zapisane.
+ Wiem jak wygląda takie kolokwium i czego oczekiwać w przyszłości.
+Nie obiecuję że będzie lepiej, ale wiem co mogę zrobić by było lepiej.
 
+s25535
 
+================================================================================
+19 Gudnia 2021
 
+Drogi pamiętniczku.
 
- 
-  
+ Na ostatnich ćwiczenach Pan prowadzący opowiedział nam trochę o posługiwanu się
+gitem. Z pewnością te informacje się przydadzą nie tylko "na teraz", ale i w
+przyszłośći. Ćwiczenia na learn-git-branchingu, są dobre, uczą w jaki sposób
+działają polecenia związane z gitem, ale nie ma co się oszukiwać bo to tylko
+wierzchołek góry lodowej.
+ Pewnego dnia próbowałem stworzyć własne repozytorium i parę innych czynności
+na trzy różne sposoby. Terminal, strona githuba i aplikacja desktopowa.
+Chyba zostanę przy terminalu, szczególnie że na terminalu umiem najwięcej, a
+Pan prowadzący odradził korzystanie ze strony internetowej githuba.
+Wierzę w ciemno. Siedzi w tym dłużej i zapewne będzie to wymagane by używać
+terminala do pracy z gitem.
+
+Liczę na owocną współpracę, s25535
 
  

@@ -1,0 +1,34 @@
+ls -a | grep D  - to polecenie wyswietla liste plikow i katalogow, ktore zawieraja wiersze 
+zaczynajace sie na litere D w biezacej lokazacji
+
+ls - a | grep D > ListaPlikowZliterkaD.txt - przekierowuje i zapisuje powyzsza liste w pliku
+o nazwie podanej po znaku ">". 
+
+> - oznacza wlasnie przekierowanie wyjsciowego wyniku do danego pliku
+| - laczy ze soba kolejne programy, oraz przekierowuje wyjscie z jednego programu, jako
+wejscie do drugiego programu
+
+1.
+ps - wyswietla aktualne procesy 
+ps -a  - wyswietla aktualne procesy, poza tymi zwiazanymi z terminalem
+ps x - wyswietla wszystkie procesy nalezace do aktualnego uzytkownika
+ps aux - wyswietla wszystkie procesy, wlaczajac w to procesy nalezace do 'root'
+? - znak zapytania w kolumnie TTY oznacza brak przypisanego terminala do danego procesu
+ps T - wszystkie procesy bash'a
+ps -u root - wszystkie procesy nalezace do 'root'
+
+2.
+kill <nr PID> - wylacza dany proces
+killall shel - wylacza proces po nazwie, w tym przypadku 'shell'
+kill nie dziala dla wszystkich procesow. Zeby wymusic wylaczenie danego procesu, trzeba
+dodac -sigkill, a na koncu <nr PID>
+
+3.
+ ctrl + c - przerywa dzialanie danego procesu, bez zapisywania go
+ctrl + d - przerywa dzialanie procesu, ale zapisuje zmiany przed tym
+
+4.
+bg - uruchamia zatrzymany proces w tle
+fg - przenosi proces pracujacy w tle, "na przod"
+jobs - wyswietla wszystkie aktualne zadania wykonywane w tle
+
