@@ -1,0 +1,34 @@
+Zadanie 1:
+1. cd ../../../kot/ma/ale bez slasha na początku
+2. cd /tmp/ukos/kot/ma/ale slash na początku
+
+Zadanie 2:
+1.mkdir -p jan/kowalski
+
+Zadanie 3:
+1.mv /tmp/ukos/kot/ma/ale /tmp/ukos/ala/i/
+2.mv ../../../kot/ma/ale ../../i/ 
+
+Zadanie 4:
+1.Poleceniem "kill numer pid".
+
+Zadanie 5:
+1.ls | grep -e '^al'
+
+Zadanie 6:
+1.chmod 007
+2.chmod 040
+3.chmod 700
+
+Zadanie 7:
+1.ls -p|grep -v/ >plik
+
+Zadanie 8:
+1.Brak miejsca na dysku
+2.Złe uprawnienia 
+
+Zadanie 9:
+1.Klawisz "Tab"
+
+Zadanie 10:
+1."bg" i "ctrl + z"
