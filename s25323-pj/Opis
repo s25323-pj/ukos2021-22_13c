@@ -1,14 +1,17 @@
 1.Zrobione
-2.Ls - zrobione
-3.Pwd - zrobione
-4.cd /Desktop - zrobione
+2.ls - zrobione
+3.pwd - zrobione
+4.cd Desktop/ - zrobione
 5.pwd - zrobione
 6.ls - zrobione
-7.zrobione
-8.ls /home - zrobione
-9.cd /Pictures - zrobione
+7.nie zobaczymy uprawnien do plikow w tak porsty sposób
+8.ls home/ - zrobione
+9.cd Pictures/ - zrobione
 10.pwd - zrobione
-11.Przeniosło mnie do directory - zrobione
-12.cd /home - zrobione
-13.permission denied - zrobione
+11.Przeniosło mnie do katalogu w kórym obecnie się znajdowałem 
+12.cd /home/<username>/Desktop/
+13.permission denied 
 14.Przeniosło mnie do pierwszej konsoli, potem przywróciło do ekranu logowania
+
+
+
