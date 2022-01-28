@@ -1,5 +1,5 @@
 Zadanie 1:
-1.Polecenie -r pozwala na sprawdzenie zawartości pliku, a ls pokaże co znajduje się w katalogu. 
+1.Uprawnienie r- (read) pozwala mi na odczytanie zawartości pliku, a ls pokaże co znajduje się w katalogu. 
 Nie mam uprawnień do wejścia do sprawdzanego katalogu. W przypadku pliku mogę sprawdzić jego zawartość wchodząc do niego za pomocą vim-a. 
 
 2.By utworzyć nowy katalog lub plik w innym katalogu potrzebuję praw dostępu w+x.
